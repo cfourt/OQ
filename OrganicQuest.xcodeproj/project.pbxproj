@@ -1,0 +1,475 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FBA171CB18959BD100363AF7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBA171CA18959BD100363AF7 /* Foundation.framework */; };
+		FBA171CD18959BD100363AF7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBA171CC18959BD100363AF7 /* CoreGraphics.framework */; };
+		FBA171CF18959BD100363AF7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBA171CE18959BD100363AF7 /* UIKit.framework */; };
+		FBA171D518959BD100363AF7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FBA171D318959BD100363AF7 /* InfoPlist.strings */; };
+		FBA171D718959BD100363AF7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA171D618959BD100363AF7 /* main.m */; };
+		FBA171DB18959BD100363AF7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA171DA18959BD100363AF7 /* AppDelegate.m */; };
+		FBA171DE18959BD100363AF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBA171DC18959BD100363AF7 /* Main.storyboard */; };
+		FBA171E118959BD100363AF7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA171E018959BD100363AF7 /* ViewController.m */; };
+		FBA171E318959BD100363AF7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBA171E218959BD100363AF7 /* Images.xcassets */; };
+		FBA171EA18959BD100363AF7 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBA171E918959BD100363AF7 /* XCTest.framework */; };
+		FBA171EB18959BD100363AF7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBA171CA18959BD100363AF7 /* Foundation.framework */; };
+		FBA171EC18959BD100363AF7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBA171CE18959BD100363AF7 /* UIKit.framework */; };
+		FBA171F418959BD100363AF7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FBA171F218959BD100363AF7 /* InfoPlist.strings */; };
+		FBA171F618959BD100363AF7 /* OrganicQuestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA171F518959BD100363AF7 /* OrganicQuestTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FBA171ED18959BD100363AF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBA171BF18959BD100363AF7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBA171C618959BD100363AF7;
+			remoteInfo = OrganicQuest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FBA171C718959BD100363AF7 /* OrganicQuest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrganicQuest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBA171CA18959BD100363AF7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FBA171CC18959BD100363AF7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FBA171CE18959BD100363AF7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FBA171D218959BD100363AF7 /* OrganicQuest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OrganicQuest-Info.plist"; sourceTree = "<group>"; };
+		FBA171D418959BD100363AF7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FBA171D618959BD100363AF7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FBA171D818959BD100363AF7 /* OrganicQuest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OrganicQuest-Prefix.pch"; sourceTree = "<group>"; };
+		FBA171D918959BD100363AF7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FBA171DA18959BD100363AF7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FBA171DD18959BD100363AF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FBA171DF18959BD100363AF7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FBA171E018959BD100363AF7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FBA171E218959BD100363AF7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FBA171E818959BD100363AF7 /* OrganicQuestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrganicQuestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBA171E918959BD100363AF7 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		FBA171F118959BD100363AF7 /* OrganicQuestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OrganicQuestTests-Info.plist"; sourceTree = "<group>"; };
+		FBA171F318959BD100363AF7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FBA171F518959BD100363AF7 /* OrganicQuestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrganicQuestTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FBA171C418959BD100363AF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBA171CD18959BD100363AF7 /* CoreGraphics.framework in Frameworks */,
+				FBA171CF18959BD100363AF7 /* UIKit.framework in Frameworks */,
+				FBA171CB18959BD100363AF7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBA171E518959BD100363AF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBA171EA18959BD100363AF7 /* XCTest.framework in Frameworks */,
+				FBA171EC18959BD100363AF7 /* UIKit.framework in Frameworks */,
+				FBA171EB18959BD100363AF7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FBA171BE18959BD100363AF7 = {
+			isa = PBXGroup;
+			children = (
+				FBA171D018959BD100363AF7 /* OrganicQuest */,
+				FBA171EF18959BD100363AF7 /* OrganicQuestTests */,
+				FBA171C918959BD100363AF7 /* Frameworks */,
+				FBA171C818959BD100363AF7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FBA171C818959BD100363AF7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FBA171C718959BD100363AF7 /* OrganicQuest.app */,
+				FBA171E818959BD100363AF7 /* OrganicQuestTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FBA171C918959BD100363AF7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FBA171CA18959BD100363AF7 /* Foundation.framework */,
+				FBA171CC18959BD100363AF7 /* CoreGraphics.framework */,
+				FBA171CE18959BD100363AF7 /* UIKit.framework */,
+				FBA171E918959BD100363AF7 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FBA171D018959BD100363AF7 /* OrganicQuest */ = {
+			isa = PBXGroup;
+			children = (
+				FBA171D918959BD100363AF7 /* AppDelegate.h */,
+				FBA171DA18959BD100363AF7 /* AppDelegate.m */,
+				FBA171DC18959BD100363AF7 /* Main.storyboard */,
+				FBA171DF18959BD100363AF7 /* ViewController.h */,
+				FBA171E018959BD100363AF7 /* ViewController.m */,
+				FBA171E218959BD100363AF7 /* Images.xcassets */,
+				FBA171D118959BD100363AF7 /* Supporting Files */,
+			);
+			path = OrganicQuest;
+			sourceTree = "<group>";
+		};
+		FBA171D118959BD100363AF7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FBA171D218959BD100363AF7 /* OrganicQuest-Info.plist */,
+				FBA171D318959BD100363AF7 /* InfoPlist.strings */,
+				FBA171D618959BD100363AF7 /* main.m */,
+				FBA171D818959BD100363AF7 /* OrganicQuest-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FBA171EF18959BD100363AF7 /* OrganicQuestTests */ = {
+			isa = PBXGroup;
+			children = (
+				FBA171F518959BD100363AF7 /* OrganicQuestTests.m */,
+				FBA171F018959BD100363AF7 /* Supporting Files */,
+			);
+			path = OrganicQuestTests;
+			sourceTree = "<group>";
+		};
+		FBA171F018959BD100363AF7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FBA171F118959BD100363AF7 /* OrganicQuestTests-Info.plist */,
+				FBA171F218959BD100363AF7 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FBA171C618959BD100363AF7 /* OrganicQuest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBA171F918959BD100363AF7 /* Build configuration list for PBXNativeTarget "OrganicQuest" */;
+			buildPhases = (
+				FBA171C318959BD100363AF7 /* Sources */,
+				FBA171C418959BD100363AF7 /* Frameworks */,
+				FBA171C518959BD100363AF7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OrganicQuest;
+			productName = OrganicQuest;
+			productReference = FBA171C718959BD100363AF7 /* OrganicQuest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FBA171E718959BD100363AF7 /* OrganicQuestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBA171FC18959BD100363AF7 /* Build configuration list for PBXNativeTarget "OrganicQuestTests" */;
+			buildPhases = (
+				FBA171E418959BD100363AF7 /* Sources */,
+				FBA171E518959BD100363AF7 /* Frameworks */,
+				FBA171E618959BD100363AF7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBA171EE18959BD100363AF7 /* PBXTargetDependency */,
+			);
+			name = OrganicQuestTests;
+			productName = OrganicQuestTests;
+			productReference = FBA171E818959BD100363AF7 /* OrganicQuestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FBA171BF18959BD100363AF7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = Connor;
+				TargetAttributes = {
+					FBA171E718959BD100363AF7 = {
+						TestTargetID = FBA171C618959BD100363AF7;
+					};
+				};
+			};
+			buildConfigurationList = FBA171C218959BD100363AF7 /* Build configuration list for PBXProject "OrganicQuest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FBA171BE18959BD100363AF7;
+			productRefGroup = FBA171C818959BD100363AF7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FBA171C618959BD100363AF7 /* OrganicQuest */,
+				FBA171E718959BD100363AF7 /* OrganicQuestTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FBA171C518959BD100363AF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBA171E318959BD100363AF7 /* Images.xcassets in Resources */,
+				FBA171D518959BD100363AF7 /* InfoPlist.strings in Resources */,
+				FBA171DE18959BD100363AF7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBA171E618959BD100363AF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBA171F418959BD100363AF7 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FBA171C318959BD100363AF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBA171E118959BD100363AF7 /* ViewController.m in Sources */,
+				FBA171DB18959BD100363AF7 /* AppDelegate.m in Sources */,
+				FBA171D718959BD100363AF7 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBA171E418959BD100363AF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBA171F618959BD100363AF7 /* OrganicQuestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FBA171EE18959BD100363AF7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBA171C618959BD100363AF7 /* OrganicQuest */;
+			targetProxy = FBA171ED18959BD100363AF7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FBA171D318959BD100363AF7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBA171D418959BD100363AF7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FBA171DC18959BD100363AF7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBA171DD18959BD100363AF7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FBA171F218959BD100363AF7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBA171F318959BD100363AF7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FBA171F718959BD100363AF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FBA171F818959BD100363AF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FBA171FA18959BD100363AF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OrganicQuest/OrganicQuest-Prefix.pch";
+				INFOPLIST_FILE = "OrganicQuest/OrganicQuest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FBA171FB18959BD100363AF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OrganicQuest/OrganicQuest-Prefix.pch";
+				INFOPLIST_FILE = "OrganicQuest/OrganicQuest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		FBA171FD18959BD100363AF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/OrganicQuest.app/OrganicQuest";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OrganicQuest/OrganicQuest-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "OrganicQuestTests/OrganicQuestTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		FBA171FE18959BD100363AF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/OrganicQuest.app/OrganicQuest";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OrganicQuest/OrganicQuest-Prefix.pch";
+				INFOPLIST_FILE = "OrganicQuestTests/OrganicQuestTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FBA171C218959BD100363AF7 /* Build configuration list for PBXProject "OrganicQuest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBA171F718959BD100363AF7 /* Debug */,
+				FBA171F818959BD100363AF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBA171F918959BD100363AF7 /* Build configuration list for PBXNativeTarget "OrganicQuest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBA171FA18959BD100363AF7 /* Debug */,
+				FBA171FB18959BD100363AF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FBA171FC18959BD100363AF7 /* Build configuration list for PBXNativeTarget "OrganicQuestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBA171FD18959BD100363AF7 /* Debug */,
+				FBA171FE18959BD100363AF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FBA171BF18959BD100363AF7 /* Project object */;
+}
