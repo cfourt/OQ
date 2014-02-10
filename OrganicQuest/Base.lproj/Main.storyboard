@@ -292,9 +292,9 @@
                     <navigationItem key="navigationItem" title="Knowledge Map" id="ZV1-4C-bV7">
                         <barButtonItem key="backBarButtonItem" title="Map" id="Z5i-mx-jNF"/>
                         <barButtonItem key="rightBarButtonItem" title="Lesson" id="0iY-Dm-S7M">
+                            <color key="tintColor" red="0.10941697849023047" green="0.86986243206521741" blue="0.4382606537675573" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <action selector="selectLesson:" destination="Gme-hb-Tnr" id="Y6T-kV-hoL"/>
-                                <segue destination="zif-m2-Sd9" kind="push" id="cD2-sx-3Ph"/>
+                                <action selector="startWalkthrough:" destination="Gme-hb-Tnr" id="KD9-hB-fOe"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

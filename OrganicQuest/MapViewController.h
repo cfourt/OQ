@@ -7,8 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "KnowledgeContentViewController.h"
 
 
-@interface MapViewController : UIViewController
+@interface MapViewController : UIViewController <UIPageViewControllerDataSource>
+- (IBAction)startWalkthrough:(id)sender;
+@property (strong, nonatomic) UIPageViewController *pageViewController;
+@property (strong, nonatomic) NSArray *pageImages;
 
 @end
