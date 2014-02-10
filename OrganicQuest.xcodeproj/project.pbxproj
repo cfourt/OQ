@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F884B84718A98E5E00C0751A /* page1.png in Resources */ = {isa = PBXBuildFile; fileRef = F884B84518A98E5E00C0751A /* page1.png */; };
+		F884B84818A98E5E00C0751A /* page2.png in Resources */ = {isa = PBXBuildFile; fileRef = F884B84618A98E5E00C0751A /* page2.png */; };
+		FB60FB211895A3F200000D5A /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB60FB201895A3F200000D5A /* MapViewController.m */; };
+		FB60FB241895A76700000D5A /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB60FB231895A76700000D5A /* MainViewController.m */; };
+		FB60FB261895ABEF00000D5A /* 274182_Papel-de-Parede-Mapa-Mundi-do-Mario_1920x1200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FB60FB251895ABEF00000D5A /* 274182_Papel-de-Parede-Mapa-Mundi-do-Mario_1920x1200.jpg */; };
+		FB60FB2C1895ACB600000D5A /* BattleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB60FB2B1895ACB600000D5A /* BattleViewController.m */; };
+		FB60FB2F1895AFC800000D5A /* KnowledgePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB60FB2E1895AFC800000D5A /* KnowledgePageViewController.m */; };
 		FBA171CB18959BD100363AF7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBA171CA18959BD100363AF7 /* Foundation.framework */; };
 		FBA171CD18959BD100363AF7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBA171CC18959BD100363AF7 /* CoreGraphics.framework */; };
 		FBA171CF18959BD100363AF7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBA171CE18959BD100363AF7 /* UIKit.framework */; };
@@ -21,6 +28,7 @@
 		FBA171EC18959BD100363AF7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBA171CE18959BD100363AF7 /* UIKit.framework */; };
 		FBA171F418959BD100363AF7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FBA171F218959BD100363AF7 /* InfoPlist.strings */; };
 		FBA171F618959BD100363AF7 /* OrganicQuestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA171F518959BD100363AF7 /* OrganicQuestTests.m */; };
+		FBBF76991896011800AB02A0 /* KnowledgeContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBBF76981896011800AB02A0 /* KnowledgeContentViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +42,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F884B84518A98E5E00C0751A /* page1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = page1.png; path = ../../../Resourses/page1.png; sourceTree = "<group>"; };
+		F884B84618A98E5E00C0751A /* page2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = page2.png; path = ../../../Resourses/page2.png; sourceTree = "<group>"; };
+		FB60FB1F1895A3F200000D5A /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		FB60FB201895A3F200000D5A /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		FB60FB221895A76700000D5A /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		FB60FB231895A76700000D5A /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		FB60FB251895ABEF00000D5A /* 274182_Papel-de-Parede-Mapa-Mundi-do-Mario_1920x1200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "274182_Papel-de-Parede-Mapa-Mundi-do-Mario_1920x1200.jpg"; path = "../../../Resourses/274182_Papel-de-Parede-Mapa-Mundi-do-Mario_1920x1200.jpg"; sourceTree = "<group>"; };
+		FB60FB2A1895ACB600000D5A /* BattleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BattleViewController.h; sourceTree = "<group>"; };
+		FB60FB2B1895ACB600000D5A /* BattleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BattleViewController.m; sourceTree = "<group>"; };
+		FB60FB2D1895AFC800000D5A /* KnowledgePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KnowledgePageViewController.h; sourceTree = "<group>"; };
+		FB60FB2E1895AFC800000D5A /* KnowledgePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KnowledgePageViewController.m; sourceTree = "<group>"; };
 		FBA171C718959BD100363AF7 /* OrganicQuest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrganicQuest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBA171CA18959BD100363AF7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FBA171CC18959BD100363AF7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +72,8 @@
 		FBA171F118959BD100363AF7 /* OrganicQuestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OrganicQuestTests-Info.plist"; sourceTree = "<group>"; };
 		FBA171F318959BD100363AF7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FBA171F518959BD100363AF7 /* OrganicQuestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrganicQuestTests.m; sourceTree = "<group>"; };
+		FBBF76971896011800AB02A0 /* KnowledgeContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KnowledgeContentViewController.h; sourceTree = "<group>"; };
+		FBBF76981896011800AB02A0 /* KnowledgeContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KnowledgeContentViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,10 +136,23 @@
 				FBA171D918959BD100363AF7 /* AppDelegate.h */,
 				FBA171DA18959BD100363AF7 /* AppDelegate.m */,
 				FBA171DC18959BD100363AF7 /* Main.storyboard */,
+				F884B84518A98E5E00C0751A /* page1.png */,
+				F884B84618A98E5E00C0751A /* page2.png */,
+				FB60FB251895ABEF00000D5A /* 274182_Papel-de-Parede-Mapa-Mundi-do-Mario_1920x1200.jpg */,
 				FBA171DF18959BD100363AF7 /* ViewController.h */,
 				FBA171E018959BD100363AF7 /* ViewController.m */,
 				FBA171E218959BD100363AF7 /* Images.xcassets */,
 				FBA171D118959BD100363AF7 /* Supporting Files */,
+				FB60FB1F1895A3F200000D5A /* MapViewController.h */,
+				FB60FB201895A3F200000D5A /* MapViewController.m */,
+				FB60FB221895A76700000D5A /* MainViewController.h */,
+				FB60FB231895A76700000D5A /* MainViewController.m */,
+				FB60FB2A1895ACB600000D5A /* BattleViewController.h */,
+				FB60FB2B1895ACB600000D5A /* BattleViewController.m */,
+				FB60FB2D1895AFC800000D5A /* KnowledgePageViewController.h */,
+				FB60FB2E1895AFC800000D5A /* KnowledgePageViewController.m */,
+				FBBF76971896011800AB02A0 /* KnowledgeContentViewController.h */,
+				FBBF76981896011800AB02A0 /* KnowledgeContentViewController.m */,
 			);
 			path = OrganicQuest;
 			sourceTree = "<group>";
@@ -229,8 +263,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBA171E318959BD100363AF7 /* Images.xcassets in Resources */,
+				F884B84718A98E5E00C0751A /* page1.png in Resources */,
+				FB60FB261895ABEF00000D5A /* 274182_Papel-de-Parede-Mapa-Mundi-do-Mario_1920x1200.jpg in Resources */,
 				FBA171D518959BD100363AF7 /* InfoPlist.strings in Resources */,
 				FBA171DE18959BD100363AF7 /* Main.storyboard in Resources */,
+				F884B84818A98E5E00C0751A /* page2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,8 +287,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBA171E118959BD100363AF7 /* ViewController.m in Sources */,
+				FB60FB2C1895ACB600000D5A /* BattleViewController.m in Sources */,
+				FBBF76991896011800AB02A0 /* KnowledgeContentViewController.m in Sources */,
+				FB60FB2F1895AFC800000D5A /* KnowledgePageViewController.m in Sources */,
 				FBA171DB18959BD100363AF7 /* AppDelegate.m in Sources */,
 				FBA171D718959BD100363AF7 /* main.m in Sources */,
+				FB60FB241895A76700000D5A /* MainViewController.m in Sources */,
+				FB60FB211895A3F200000D5A /* MapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,7 +347,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -344,7 +385,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -402,7 +442,6 @@
 		FBA171FD18959BD100363AF7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/OrganicQuest.app/OrganicQuest";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -425,7 +464,6 @@
 		FBA171FE18959BD100363AF7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/OrganicQuest.app/OrganicQuest";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -460,6 +498,7 @@
 				FBA171FB18959BD100363AF7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FBA171FC18959BD100363AF7 /* Build configuration list for PBXNativeTarget "OrganicQuestTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +507,7 @@
 				FBA171FE18959BD100363AF7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
