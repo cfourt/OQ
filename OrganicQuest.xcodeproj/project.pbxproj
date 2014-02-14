@@ -47,8 +47,8 @@
 		F884B84518A98E5E00C0751A /* page1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = page1.png; path = ../../../Resourses/page1.png; sourceTree = "<group>"; };
 		F884B84618A98E5E00C0751A /* page2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = page2.png; path = ../../../Resourses/page2.png; sourceTree = "<group>"; };
 		F8B48CBD18AD8FA7007AD0C3 /* page3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = page3.png; sourceTree = "<group>"; };
-		F8B48CBF18AD9A7E007AD0C3 /* PreKnowledgeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PreKnowledgeViewController.h; path = ../PreKnowledgeViewController.h; sourceTree = "<group>"; };
-		F8B48CC018AD9A7E007AD0C3 /* PreKnowledgeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PreKnowledgeViewController.m; path = ../PreKnowledgeViewController.m; sourceTree = "<group>"; };
+		F8B48CBF18AD9A7E007AD0C3 /* PreKnowledgeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreKnowledgeViewController.h; sourceTree = "<group>"; };
+		F8B48CC018AD9A7E007AD0C3 /* PreKnowledgeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreKnowledgeViewController.m; sourceTree = "<group>"; };
 		FB60FB1F1895A3F200000D5A /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		FB60FB201895A3F200000D5A /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		FB60FB221895A76700000D5A /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
@@ -108,6 +108,8 @@
 		FBA171BE18959BD100363AF7 = {
 			isa = PBXGroup;
 			children = (
+				F8B48CBF18AD9A7E007AD0C3 /* PreKnowledgeViewController.h */,
+				F8B48CC018AD9A7E007AD0C3 /* PreKnowledgeViewController.m */,
 				FBA171D018959BD100363AF7 /* OrganicQuest */,
 				FBA171EF18959BD100363AF7 /* OrganicQuestTests */,
 				FBA171C918959BD100363AF7 /* Frameworks */,
@@ -139,8 +141,6 @@
 			isa = PBXGroup;
 			children = (
 				FBA171DC18959BD100363AF7 /* Main.storyboard */,
-				F8B48CBF18AD9A7E007AD0C3 /* PreKnowledgeViewController.h */,
-				F8B48CC018AD9A7E007AD0C3 /* PreKnowledgeViewController.m */,
 				FBA171D918959BD100363AF7 /* AppDelegate.h */,
 				FBA171DA18959BD100363AF7 /* AppDelegate.m */,
 				F884B84518A98E5E00C0751A /* page1.png */,
