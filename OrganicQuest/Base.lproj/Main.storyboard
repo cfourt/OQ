@@ -129,15 +129,15 @@
                                 </state>
                                 <state key="highlighted" title="You Kicked Ass!"/>
                                 <connections>
-                                    <segue destination="I1z-YF-1Nm" kind="unwind" unwindAction="unwindToMap:" id="MQq-0p-BOX"/>
+                                    <segue destination="I1z-YF-1Nm" kind="unwind" unwindAction="unwindToMap:" id="27T-g7-iuS"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Uys-tP-lfN" firstAttribute="top" secondItem="dSk-61-QCd" secondAttribute="bottom" constant="36" id="Ltc-hT-iUJ"/>
-                            <constraint firstItem="dSk-61-QCd" firstAttribute="leading" secondItem="WCO-dj-aLw" secondAttribute="leading" constant="65" id="QJi-s5-LLs"/>
-                            <constraint firstItem="dSk-61-QCd" firstAttribute="centerX" secondItem="WCO-dj-aLw" secondAttribute="centerX" id="huv-jL-pst"/>
+                            <constraint firstItem="dSk-61-QCd" firstAttribute="centerX" secondItem="WCO-dj-aLw" secondAttribute="centerX" id="E8Z-Wg-0JX"/>
+                            <constraint firstItem="dSk-61-QCd" firstAttribute="leading" secondItem="WCO-dj-aLw" secondAttribute="leading" constant="65" id="MP2-Hv-jmP"/>
+                            <constraint firstItem="Uys-tP-lfN" firstAttribute="top" secondItem="dSk-61-QCd" secondAttribute="bottom" constant="36" id="wRH-hu-oxQ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="wb2-52-oxB"/>
@@ -145,7 +145,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cYl-M2-HAX" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="I1z-YF-1Nm" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="891" y="235"/>
+            <point key="canvasLocation" x="1935" y="-458"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="s14-e4-HGe">
@@ -279,31 +279,56 @@
                         <viewControllerLayoutGuide type="bottom" id="VVH-J6-CiZ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="LsO-oM-fk1">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="274182_Papel-de-Parede-Mapa-Mundi-do-Mario_1920x1200.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="gPg-DJ-GSf">
-                                <rect key="frame" x="0.0" y="65" width="320" height="503"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="274182_Papel-de-Parede-Mapa-Mundi-do-Mario_1920x1200.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Wm3-gK-JCa">
+                                <rect key="frame" x="0.0" y="-65" width="320" height="569"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Wm3-gK-JCa" firstAttribute="leading" secondItem="LsO-oM-fk1" secondAttribute="leading" id="QPP-nB-t32"/>
+                            <constraint firstItem="Wm3-gK-JCa" firstAttribute="top" secondItem="LsO-oM-fk1" secondAttribute="top" constant="-65" id="YLb-Cn-UMo"/>
+                            <constraint firstAttribute="bottom" secondItem="Wm3-gK-JCa" secondAttribute="bottom" id="ZKe-ku-QHl"/>
+                            <constraint firstAttribute="trailing" secondItem="Wm3-gK-JCa" secondAttribute="trailing" id="pDJ-F3-uBJ"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Knowledge Map" id="ZV1-4C-bV7">
                         <barButtonItem key="backBarButtonItem" title="Map" id="Z5i-mx-jNF"/>
                         <barButtonItem key="rightBarButtonItem" title="Lesson" id="0iY-Dm-S7M">
                             <color key="tintColor" red="0.10941697849023047" green="0.86986243206521741" blue="0.4382606537675573" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <action selector="startWalkthrough:" destination="Gme-hb-Tnr" id="KD9-hB-fOe"/>
+                                <segue destination="NkJ-wp-xlw" kind="push" id="wRw-cB-FsG"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nFk-JZ-5ix" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="365" y="-458"/>
+        </scene>
+        <!--Pre Knowledge View Controller-->
+        <scene sceneID="JeC-96-Rh9">
+            <objects>
+                <viewController storyboardIdentifier="PreKnowledgeViewController" id="NkJ-wp-xlw" customClass="PreKnowledgeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TbU-Bw-Xki"/>
+                        <viewControllerLayoutGuide type="bottom" id="9QF-gr-ImL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZGg-Vh-37Q">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="VG0-qs-lcp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WRP-Sr-RbH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="785" y="-458"/>
         </scene>
         <!--Knowledge Page View Controller - Organic Card-->
         <scene sceneID="5qm-s7-Rqe">
@@ -327,29 +352,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="page1.png" translatesAutoresizingMaskIntoConstraints="NO" id="2GJ-LC-TpF">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="page1.png" translatesAutoresizingMaskIntoConstraints="NO" id="2GJ-LC-TpF">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qlj-4H-jko">
-                                <rect key="frame" x="69" y="518" width="182" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WQ8-33-t39">
+                                <rect key="frame" x="65" y="506" width="191" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="I'm Done">
+                                <state key="normal" title="I'm ready for a challenge!">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Rlp-1e-1Aq" kind="unwind" unwindAction="unwindToMap:" id="9MG-qm-QzM"/>
+                                    <segue destination="xz4-0C-hDr" kind="push" id="COK-Lu-crL"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="2GJ-LC-TpF" secondAttribute="bottom" id="LzW-6Z-8La"/>
+                            <constraint firstItem="2GJ-LC-TpF" firstAttribute="leading" secondItem="Olj-dV-ZwZ" secondAttribute="leading" id="Q4b-NR-dKa"/>
+                            <constraint firstItem="2GJ-LC-TpF" firstAttribute="centerX" secondItem="WQ8-33-t39" secondAttribute="centerX" id="QnZ-ja-rAr"/>
+                            <constraint firstItem="bAc-hC-rxX" firstAttribute="top" secondItem="WQ8-33-t39" secondAttribute="bottom" constant="32" id="SV5-rn-l3h"/>
+                            <constraint firstItem="2GJ-LC-TpF" firstAttribute="top" secondItem="Olj-dV-ZwZ" secondAttribute="top" id="a6D-TQ-gEV"/>
+                            <constraint firstItem="WQ8-33-t39" firstAttribute="centerX" secondItem="Olj-dV-ZwZ" secondAttribute="centerX" id="nJ8-dA-flx"/>
+                            <constraint firstItem="WQ8-33-t39" firstAttribute="leading" secondItem="Olj-dV-ZwZ" secondAttribute="leading" constant="65" id="zI9-6m-R8u"/>
+                        </constraints>
                     </view>
+                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="backgroundImageView" destination="2GJ-LC-TpF" id="OMm-H9-0wN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g7b-y3-Xxa" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="Rlp-1e-1Aq" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1563" y="-458"/>
         </scene>

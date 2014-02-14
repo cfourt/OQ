@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		F884B84718A98E5E00C0751A /* page1.png in Resources */ = {isa = PBXBuildFile; fileRef = F884B84518A98E5E00C0751A /* page1.png */; };
 		F884B84818A98E5E00C0751A /* page2.png in Resources */ = {isa = PBXBuildFile; fileRef = F884B84618A98E5E00C0751A /* page2.png */; };
+		F8B48CBE18AD8FA7007AD0C3 /* page3.png in Resources */ = {isa = PBXBuildFile; fileRef = F8B48CBD18AD8FA7007AD0C3 /* page3.png */; };
+		F8B48CC118AD9A7E007AD0C3 /* PreKnowledgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B48CC018AD9A7E007AD0C3 /* PreKnowledgeViewController.m */; };
 		FB60FB211895A3F200000D5A /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB60FB201895A3F200000D5A /* MapViewController.m */; };
 		FB60FB241895A76700000D5A /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB60FB231895A76700000D5A /* MainViewController.m */; };
 		FB60FB261895ABEF00000D5A /* 274182_Papel-de-Parede-Mapa-Mundi-do-Mario_1920x1200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FB60FB251895ABEF00000D5A /* 274182_Papel-de-Parede-Mapa-Mundi-do-Mario_1920x1200.jpg */; };
@@ -44,6 +46,9 @@
 /* Begin PBXFileReference section */
 		F884B84518A98E5E00C0751A /* page1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = page1.png; path = ../../../Resourses/page1.png; sourceTree = "<group>"; };
 		F884B84618A98E5E00C0751A /* page2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = page2.png; path = ../../../Resourses/page2.png; sourceTree = "<group>"; };
+		F8B48CBD18AD8FA7007AD0C3 /* page3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = page3.png; sourceTree = "<group>"; };
+		F8B48CBF18AD9A7E007AD0C3 /* PreKnowledgeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PreKnowledgeViewController.h; path = ../PreKnowledgeViewController.h; sourceTree = "<group>"; };
+		F8B48CC018AD9A7E007AD0C3 /* PreKnowledgeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PreKnowledgeViewController.m; path = ../PreKnowledgeViewController.m; sourceTree = "<group>"; };
 		FB60FB1F1895A3F200000D5A /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		FB60FB201895A3F200000D5A /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		FB60FB221895A76700000D5A /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
@@ -133,10 +138,13 @@
 		FBA171D018959BD100363AF7 /* OrganicQuest */ = {
 			isa = PBXGroup;
 			children = (
+				FBA171DC18959BD100363AF7 /* Main.storyboard */,
+				F8B48CBF18AD9A7E007AD0C3 /* PreKnowledgeViewController.h */,
+				F8B48CC018AD9A7E007AD0C3 /* PreKnowledgeViewController.m */,
 				FBA171D918959BD100363AF7 /* AppDelegate.h */,
 				FBA171DA18959BD100363AF7 /* AppDelegate.m */,
-				FBA171DC18959BD100363AF7 /* Main.storyboard */,
 				F884B84518A98E5E00C0751A /* page1.png */,
+				F8B48CBD18AD8FA7007AD0C3 /* page3.png */,
 				F884B84618A98E5E00C0751A /* page2.png */,
 				FB60FB251895ABEF00000D5A /* 274182_Papel-de-Parede-Mapa-Mundi-do-Mario_1920x1200.jpg */,
 				FBA171DF18959BD100363AF7 /* ViewController.h */,
@@ -268,6 +276,7 @@
 				FBA171D518959BD100363AF7 /* InfoPlist.strings in Resources */,
 				FBA171DE18959BD100363AF7 /* Main.storyboard in Resources */,
 				F884B84818A98E5E00C0751A /* page2.png in Resources */,
+				F8B48CBE18AD8FA7007AD0C3 /* page3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +297,7 @@
 			files = (
 				FBA171E118959BD100363AF7 /* ViewController.m in Sources */,
 				FB60FB2C1895ACB600000D5A /* BattleViewController.m in Sources */,
+				F8B48CC118AD9A7E007AD0C3 /* PreKnowledgeViewController.m in Sources */,
 				FBBF76991896011800AB02A0 /* KnowledgeContentViewController.m in Sources */,
 				FB60FB2F1895AFC800000D5A /* KnowledgePageViewController.m in Sources */,
 				FBA171DB18959BD100363AF7 /* AppDelegate.m in Sources */,
