@@ -10,7 +10,7 @@
 		F884B84718A98E5E00C0751A /* page1.png in Resources */ = {isa = PBXBuildFile; fileRef = F884B84518A98E5E00C0751A /* page1.png */; };
 		F884B84818A98E5E00C0751A /* page2.png in Resources */ = {isa = PBXBuildFile; fileRef = F884B84618A98E5E00C0751A /* page2.png */; };
 		F8B48CBE18AD8FA7007AD0C3 /* page3.png in Resources */ = {isa = PBXBuildFile; fileRef = F8B48CBD18AD8FA7007AD0C3 /* page3.png */; };
-		F8B48CC118AD9A7E007AD0C3 /* PreKnowledgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B48CC018AD9A7E007AD0C3 /* PreKnowledgeViewController.m */; };
+		F8D17BD218AEA9B400864525 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8D17BD118AEA9B400864525 /* Images.xcassets */; };
 		FB60FB211895A3F200000D5A /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB60FB201895A3F200000D5A /* MapViewController.m */; };
 		FB60FB241895A76700000D5A /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB60FB231895A76700000D5A /* MainViewController.m */; };
 		FB60FB261895ABEF00000D5A /* 274182_Papel-de-Parede-Mapa-Mundi-do-Mario_1920x1200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FB60FB251895ABEF00000D5A /* 274182_Papel-de-Parede-Mapa-Mundi-do-Mario_1920x1200.jpg */; };
@@ -24,7 +24,6 @@
 		FBA171DB18959BD100363AF7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA171DA18959BD100363AF7 /* AppDelegate.m */; };
 		FBA171DE18959BD100363AF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBA171DC18959BD100363AF7 /* Main.storyboard */; };
 		FBA171E118959BD100363AF7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA171E018959BD100363AF7 /* ViewController.m */; };
-		FBA171E318959BD100363AF7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBA171E218959BD100363AF7 /* Images.xcassets */; };
 		FBA171EA18959BD100363AF7 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBA171E918959BD100363AF7 /* XCTest.framework */; };
 		FBA171EB18959BD100363AF7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBA171CA18959BD100363AF7 /* Foundation.framework */; };
 		FBA171EC18959BD100363AF7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBA171CE18959BD100363AF7 /* UIKit.framework */; };
@@ -47,8 +46,7 @@
 		F884B84518A98E5E00C0751A /* page1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = page1.png; path = ../../../Resourses/page1.png; sourceTree = "<group>"; };
 		F884B84618A98E5E00C0751A /* page2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = page2.png; path = ../../../Resourses/page2.png; sourceTree = "<group>"; };
 		F8B48CBD18AD8FA7007AD0C3 /* page3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = page3.png; sourceTree = "<group>"; };
-		F8B48CBF18AD9A7E007AD0C3 /* PreKnowledgeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreKnowledgeViewController.h; sourceTree = "<group>"; };
-		F8B48CC018AD9A7E007AD0C3 /* PreKnowledgeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreKnowledgeViewController.m; sourceTree = "<group>"; };
+		F8D17BD118AEA9B400864525 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FB60FB1F1895A3F200000D5A /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		FB60FB201895A3F200000D5A /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		FB60FB221895A76700000D5A /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
@@ -71,7 +69,6 @@
 		FBA171DD18959BD100363AF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FBA171DF18959BD100363AF7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		FBA171E018959BD100363AF7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		FBA171E218959BD100363AF7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FBA171E818959BD100363AF7 /* OrganicQuestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrganicQuestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBA171E918959BD100363AF7 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		FBA171F118959BD100363AF7 /* OrganicQuestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OrganicQuestTests-Info.plist"; sourceTree = "<group>"; };
@@ -108,8 +105,6 @@
 		FBA171BE18959BD100363AF7 = {
 			isa = PBXGroup;
 			children = (
-				F8B48CBF18AD9A7E007AD0C3 /* PreKnowledgeViewController.h */,
-				F8B48CC018AD9A7E007AD0C3 /* PreKnowledgeViewController.m */,
 				FBA171D018959BD100363AF7 /* OrganicQuest */,
 				FBA171EF18959BD100363AF7 /* OrganicQuestTests */,
 				FBA171C918959BD100363AF7 /* Frameworks */,
@@ -144,12 +139,12 @@
 				FBA171D918959BD100363AF7 /* AppDelegate.h */,
 				FBA171DA18959BD100363AF7 /* AppDelegate.m */,
 				F884B84518A98E5E00C0751A /* page1.png */,
+				F8D17BD118AEA9B400864525 /* Images.xcassets */,
 				F8B48CBD18AD8FA7007AD0C3 /* page3.png */,
 				F884B84618A98E5E00C0751A /* page2.png */,
 				FB60FB251895ABEF00000D5A /* 274182_Papel-de-Parede-Mapa-Mundi-do-Mario_1920x1200.jpg */,
 				FBA171DF18959BD100363AF7 /* ViewController.h */,
 				FBA171E018959BD100363AF7 /* ViewController.m */,
-				FBA171E218959BD100363AF7 /* Images.xcassets */,
 				FBA171D118959BD100363AF7 /* Supporting Files */,
 				FB60FB1F1895A3F200000D5A /* MapViewController.h */,
 				FB60FB201895A3F200000D5A /* MapViewController.m */,
@@ -270,7 +265,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBA171E318959BD100363AF7 /* Images.xcassets in Resources */,
+				F8D17BD218AEA9B400864525 /* Images.xcassets in Resources */,
 				F884B84718A98E5E00C0751A /* page1.png in Resources */,
 				FB60FB261895ABEF00000D5A /* 274182_Papel-de-Parede-Mapa-Mundi-do-Mario_1920x1200.jpg in Resources */,
 				FBA171D518959BD100363AF7 /* InfoPlist.strings in Resources */,
@@ -297,7 +292,6 @@
 			files = (
 				FBA171E118959BD100363AF7 /* ViewController.m in Sources */,
 				FB60FB2C1895ACB600000D5A /* BattleViewController.m in Sources */,
-				F8B48CC118AD9A7E007AD0C3 /* PreKnowledgeViewController.m in Sources */,
 				FBBF76991896011800AB02A0 /* KnowledgeContentViewController.m in Sources */,
 				FB60FB2F1895AFC800000D5A /* KnowledgePageViewController.m in Sources */,
 				FBA171DB18959BD100363AF7 /* AppDelegate.m in Sources */,
