@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F884B84718A98E5E00C0751A /* page1.png in Resources */ = {isa = PBXBuildFile; fileRef = F884B84518A98E5E00C0751A /* page1.png */; };
-		F884B84818A98E5E00C0751A /* page2.png in Resources */ = {isa = PBXBuildFile; fileRef = F884B84618A98E5E00C0751A /* page2.png */; };
+		F816501E18C1B22F007F4061 /* 274182_Papel-de-Parede-Mapa-Mundi-do-Mario_1920x1200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F816501B18C1B22F007F4061 /* 274182_Papel-de-Parede-Mapa-Mundi-do-Mario_1920x1200.jpg */; };
+		F816501F18C1B22F007F4061 /* page1.png in Resources */ = {isa = PBXBuildFile; fileRef = F816501C18C1B22F007F4061 /* page1.png */; };
+		F816502018C1B22F007F4061 /* page2.png in Resources */ = {isa = PBXBuildFile; fileRef = F816501D18C1B22F007F4061 /* page2.png */; };
+		F816502218C1B577007F4061 /* FirstQuestion.png in Resources */ = {isa = PBXBuildFile; fileRef = F816502118C1B577007F4061 /* FirstQuestion.png */; };
 		F8B48CBE18AD8FA7007AD0C3 /* page3.png in Resources */ = {isa = PBXBuildFile; fileRef = F8B48CBD18AD8FA7007AD0C3 /* page3.png */; };
 		F8D17BD218AEA9B400864525 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8D17BD118AEA9B400864525 /* Images.xcassets */; };
 		FB60FB211895A3F200000D5A /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB60FB201895A3F200000D5A /* MapViewController.m */; };
 		FB60FB241895A76700000D5A /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB60FB231895A76700000D5A /* MainViewController.m */; };
-		FB60FB261895ABEF00000D5A /* 274182_Papel-de-Parede-Mapa-Mundi-do-Mario_1920x1200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FB60FB251895ABEF00000D5A /* 274182_Papel-de-Parede-Mapa-Mundi-do-Mario_1920x1200.jpg */; };
 		FB60FB2C1895ACB600000D5A /* BattleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB60FB2B1895ACB600000D5A /* BattleViewController.m */; };
 		FB60FB2F1895AFC800000D5A /* KnowledgePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB60FB2E1895AFC800000D5A /* KnowledgePageViewController.m */; };
 		FBA171CB18959BD100363AF7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBA171CA18959BD100363AF7 /* Foundation.framework */; };
@@ -43,15 +44,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F884B84518A98E5E00C0751A /* page1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = page1.png; path = ../../../Resourses/page1.png; sourceTree = "<group>"; };
-		F884B84618A98E5E00C0751A /* page2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = page2.png; path = ../../../Resourses/page2.png; sourceTree = "<group>"; };
+		F816501B18C1B22F007F4061 /* 274182_Papel-de-Parede-Mapa-Mundi-do-Mario_1920x1200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "274182_Papel-de-Parede-Mapa-Mundi-do-Mario_1920x1200.jpg"; sourceTree = "<group>"; };
+		F816501C18C1B22F007F4061 /* page1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = page1.png; sourceTree = "<group>"; };
+		F816501D18C1B22F007F4061 /* page2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = page2.png; sourceTree = "<group>"; };
+		F816502118C1B577007F4061 /* FirstQuestion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FirstQuestion.png; sourceTree = "<group>"; };
 		F8B48CBD18AD8FA7007AD0C3 /* page3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = page3.png; sourceTree = "<group>"; };
 		F8D17BD118AEA9B400864525 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FB60FB1F1895A3F200000D5A /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		FB60FB201895A3F200000D5A /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		FB60FB221895A76700000D5A /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		FB60FB231895A76700000D5A /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		FB60FB251895ABEF00000D5A /* 274182_Papel-de-Parede-Mapa-Mundi-do-Mario_1920x1200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "274182_Papel-de-Parede-Mapa-Mundi-do-Mario_1920x1200.jpg"; path = "../../../Resourses/274182_Papel-de-Parede-Mapa-Mundi-do-Mario_1920x1200.jpg"; sourceTree = "<group>"; };
 		FB60FB2A1895ACB600000D5A /* BattleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BattleViewController.h; sourceTree = "<group>"; };
 		FB60FB2B1895ACB600000D5A /* BattleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BattleViewController.m; sourceTree = "<group>"; };
 		FB60FB2D1895AFC800000D5A /* KnowledgePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KnowledgePageViewController.h; sourceTree = "<group>"; };
@@ -135,14 +137,15 @@
 		FBA171D018959BD100363AF7 /* OrganicQuest */ = {
 			isa = PBXGroup;
 			children = (
+				F816501B18C1B22F007F4061 /* 274182_Papel-de-Parede-Mapa-Mundi-do-Mario_1920x1200.jpg */,
+				F816501C18C1B22F007F4061 /* page1.png */,
+				F816501D18C1B22F007F4061 /* page2.png */,
 				FBA171DC18959BD100363AF7 /* Main.storyboard */,
+				F816502118C1B577007F4061 /* FirstQuestion.png */,
 				FBA171D918959BD100363AF7 /* AppDelegate.h */,
 				FBA171DA18959BD100363AF7 /* AppDelegate.m */,
-				F884B84518A98E5E00C0751A /* page1.png */,
 				F8D17BD118AEA9B400864525 /* Images.xcassets */,
 				F8B48CBD18AD8FA7007AD0C3 /* page3.png */,
-				F884B84618A98E5E00C0751A /* page2.png */,
-				FB60FB251895ABEF00000D5A /* 274182_Papel-de-Parede-Mapa-Mundi-do-Mario_1920x1200.jpg */,
 				FBA171DF18959BD100363AF7 /* ViewController.h */,
 				FBA171E018959BD100363AF7 /* ViewController.m */,
 				FBA171D118959BD100363AF7 /* Supporting Files */,
@@ -266,11 +269,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8D17BD218AEA9B400864525 /* Images.xcassets in Resources */,
-				F884B84718A98E5E00C0751A /* page1.png in Resources */,
-				FB60FB261895ABEF00000D5A /* 274182_Papel-de-Parede-Mapa-Mundi-do-Mario_1920x1200.jpg in Resources */,
+				F816501E18C1B22F007F4061 /* 274182_Papel-de-Parede-Mapa-Mundi-do-Mario_1920x1200.jpg in Resources */,
+				F816502018C1B22F007F4061 /* page2.png in Resources */,
+				F816501F18C1B22F007F4061 /* page1.png in Resources */,
+				F816502218C1B577007F4061 /* FirstQuestion.png in Resources */,
 				FBA171D518959BD100363AF7 /* InfoPlist.strings in Resources */,
 				FBA171DE18959BD100363AF7 /* Main.storyboard in Resources */,
-				F884B84818A98E5E00C0751A /* page2.png in Resources */,
 				F8B48CBE18AD8FA7007AD0C3 /* page3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
