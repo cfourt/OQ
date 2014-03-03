@@ -374,7 +374,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WQ8-33-t39">
-                                <rect key="frame" x="67" y="506" width="191" height="30"/>
+                                <rect key="frame" x="65" y="518" width="191" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Oh! I get it now. ">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -383,13 +383,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="WQ8-33-t39" firstAttribute="leading" secondItem="Olj-dV-ZwZ" secondAttribute="leading" constant="67" id="DVF-hb-PW9"/>
+                            <constraint firstAttribute="bottom" secondItem="WQ8-33-t39" secondAttribute="bottom" constant="20" symbolic="YES" id="BaT-7p-Pdz"/>
                             <constraint firstItem="2GJ-LC-TpF" firstAttribute="top" secondItem="Olj-dV-ZwZ" secondAttribute="top" id="FSA-eq-7VC"/>
                             <constraint firstAttribute="bottom" secondItem="2GJ-LC-TpF" secondAttribute="bottom" id="cAk-Y9-ekx"/>
                             <constraint firstItem="2GJ-LC-TpF" firstAttribute="leading" secondItem="Olj-dV-ZwZ" secondAttribute="leading" id="d7O-ep-CcI"/>
+                            <constraint firstItem="WQ8-33-t39" firstAttribute="leading" secondItem="Olj-dV-ZwZ" secondAttribute="leading" constant="65" id="eqV-zw-TB7"/>
+                            <constraint firstItem="WQ8-33-t39" firstAttribute="centerX" secondItem="2GJ-LC-TpF" secondAttribute="centerX" id="h3x-ej-tEo"/>
                             <constraint firstAttribute="trailing" secondItem="2GJ-LC-TpF" secondAttribute="trailing" id="kN3-WG-VtN"/>
-                            <constraint firstItem="bAc-hC-rxX" firstAttribute="top" secondItem="WQ8-33-t39" secondAttribute="bottom" constant="32" id="lTj-ou-09T"/>
-                            <constraint firstAttribute="trailing" secondItem="WQ8-33-t39" secondAttribute="trailing" constant="62" id="uEJ-lF-XAL"/>
                         </constraints>
                     </view>
                     <nil key="simulatedTopBarMetrics"/>

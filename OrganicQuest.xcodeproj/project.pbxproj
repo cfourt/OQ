@@ -14,6 +14,10 @@
 		F8B48CBE18AD8FA7007AD0C3 /* page3.png in Resources */ = {isa = PBXBuildFile; fileRef = F8B48CBD18AD8FA7007AD0C3 /* page3.png */; };
 		F8BB257618C4448700066E8E /* PreKnowledgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8BB257518C4448700066E8E /* PreKnowledgeViewController.m */; };
 		F8BB258818C4F43D00066E8E /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8BB258718C4F43D00066E8E /* BaseViewController.m */; };
+		F8BB259318C50DBB00066E8E /* FirstAnswer2.png in Resources */ = {isa = PBXBuildFile; fileRef = F8BB259018C50DBB00066E8E /* FirstAnswer2.png */; };
+		F8BB259418C50DBB00066E8E /* FirstAnswer3.png in Resources */ = {isa = PBXBuildFile; fileRef = F8BB259118C50DBB00066E8E /* FirstAnswer3.png */; };
+		F8BB259518C50DBB00066E8E /* FirstAnswer4.png in Resources */ = {isa = PBXBuildFile; fileRef = F8BB259218C50DBB00066E8E /* FirstAnswer4.png */; };
+		F8BB259718C50F3F00066E8E /* FirstAnswer.png in Resources */ = {isa = PBXBuildFile; fileRef = F8BB259618C50F3F00066E8E /* FirstAnswer.png */; };
 		F8D17BD218AEA9B400864525 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8D17BD118AEA9B400864525 /* Images.xcassets */; };
 		FB60FB211895A3F200000D5A /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB60FB201895A3F200000D5A /* MapViewController.m */; };
 		FB60FB241895A76700000D5A /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB60FB231895A76700000D5A /* MainViewController.m */; };
@@ -55,6 +59,10 @@
 		F8BB257518C4448700066E8E /* PreKnowledgeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreKnowledgeViewController.m; sourceTree = "<group>"; };
 		F8BB258618C4F43D00066E8E /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseViewController.h; path = OrganicQuest/BaseViewController.h; sourceTree = "<group>"; wrapsLines = 0; };
 		F8BB258718C4F43D00066E8E /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseViewController.m; path = OrganicQuest/BaseViewController.m; sourceTree = "<group>"; wrapsLines = 0; };
+		F8BB259018C50DBB00066E8E /* FirstAnswer2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FirstAnswer2.png; sourceTree = "<group>"; };
+		F8BB259118C50DBB00066E8E /* FirstAnswer3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FirstAnswer3.png; sourceTree = "<group>"; };
+		F8BB259218C50DBB00066E8E /* FirstAnswer4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FirstAnswer4.png; sourceTree = "<group>"; };
+		F8BB259618C50F3F00066E8E /* FirstAnswer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FirstAnswer.png; sourceTree = "<group>"; };
 		F8D17BD118AEA9B400864525 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FB60FB1F1895A3F200000D5A /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		FB60FB201895A3F200000D5A /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
@@ -113,6 +121,10 @@
 		FBA171BE18959BD100363AF7 = {
 			isa = PBXGroup;
 			children = (
+				F8BB259618C50F3F00066E8E /* FirstAnswer.png */,
+				F8BB259018C50DBB00066E8E /* FirstAnswer2.png */,
+				F8BB259118C50DBB00066E8E /* FirstAnswer3.png */,
+				F8BB259218C50DBB00066E8E /* FirstAnswer4.png */,
 				F8BB258618C4F43D00066E8E /* BaseViewController.h */,
 				F8BB258718C4F43D00066E8E /* BaseViewController.m */,
 				FBA171D018959BD100363AF7 /* OrganicQuest */,
@@ -280,12 +292,16 @@
 			files = (
 				F8D17BD218AEA9B400864525 /* Images.xcassets in Resources */,
 				F816501E18C1B22F007F4061 /* 274182_Papel-de-Parede-Mapa-Mundi-do-Mario_1920x1200.jpg in Resources */,
+				F8BB259418C50DBB00066E8E /* FirstAnswer3.png in Resources */,
 				F816502018C1B22F007F4061 /* page2.png in Resources */,
 				F816501F18C1B22F007F4061 /* page1.png in Resources */,
 				F816502218C1B577007F4061 /* FirstQuestion.png in Resources */,
+				F8BB259518C50DBB00066E8E /* FirstAnswer4.png in Resources */,
 				FBA171D518959BD100363AF7 /* InfoPlist.strings in Resources */,
 				FBA171DE18959BD100363AF7 /* Main.storyboard in Resources */,
 				F8B48CBE18AD8FA7007AD0C3 /* page3.png in Resources */,
+				F8BB259718C50F3F00066E8E /* FirstAnswer.png in Resources */,
+				F8BB259318C50DBB00066E8E /* FirstAnswer2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

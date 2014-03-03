@@ -27,7 +27,7 @@
 {
     [super viewDidLoad];
     // Create the data model
-    _pageImages = @[@"page1", @"page2", @"page3"];
+    _pageImages = @[@"FirstAnswer", @"FirstAnswer2", @"FirstAnswer3", @"FirstAnswer4"];
     
     
     // Create page view controller
