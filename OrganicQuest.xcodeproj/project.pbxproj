@@ -53,8 +53,8 @@
 		F8B48CBD18AD8FA7007AD0C3 /* page3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = page3.png; sourceTree = "<group>"; };
 		F8BB257418C4448700066E8E /* PreKnowledgeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreKnowledgeViewController.h; sourceTree = "<group>"; };
 		F8BB257518C4448700066E8E /* PreKnowledgeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreKnowledgeViewController.m; sourceTree = "<group>"; };
-		F8BB258618C4F43D00066E8E /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseViewController.h; path = OrganicQuest/BaseViewController.h; sourceTree = "<group>"; };
-		F8BB258718C4F43D00066E8E /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseViewController.m; path = OrganicQuest/BaseViewController.m; sourceTree = "<group>"; };
+		F8BB258618C4F43D00066E8E /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseViewController.h; path = OrganicQuest/BaseViewController.h; sourceTree = "<group>"; wrapsLines = 0; };
+		F8BB258718C4F43D00066E8E /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseViewController.m; path = OrganicQuest/BaseViewController.m; sourceTree = "<group>"; wrapsLines = 0; };
 		F8D17BD118AEA9B400864525 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FB60FB1F1895A3F200000D5A /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		FB60FB201895A3F200000D5A /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
@@ -82,7 +82,7 @@
 		FBA171F118959BD100363AF7 /* OrganicQuestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OrganicQuestTests-Info.plist"; sourceTree = "<group>"; };
 		FBA171F318959BD100363AF7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FBA171F518959BD100363AF7 /* OrganicQuestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrganicQuestTests.m; sourceTree = "<group>"; };
-		FBBF76971896011800AB02A0 /* KnowledgeContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KnowledgeContentViewController.h; sourceTree = "<group>"; };
+		FBBF76971896011800AB02A0 /* KnowledgeContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KnowledgeContentViewController.h; sourceTree = "<group>"; wrapsLines = 0; };
 		FBBF76981896011800AB02A0 /* KnowledgeContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KnowledgeContentViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 

@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "KnowledgeContentViewController.h"
 
-@interface BaseViewController : UIViewController
-
-
+@interface BaseViewController : UIViewController <UIPageViewControllerDataSource>
+    @property (strong, nonatomic) UIPageViewController *pageViewController;
+    @property (strong, nonatomic) NSArray *pageImages;
 @end
