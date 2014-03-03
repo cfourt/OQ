@@ -1,18 +1,18 @@
 //
-//  KnowledgePageViewController.m
+//  BaseViewController.m
 //  OrganicQuest
 //
-//  Created by Connor on 1/26/14.
+//  Created by Connor Fourt on 3/3/14.
 //  Copyright (c) 2014 Connor. All rights reserved.
 //
 
-#import "KnowledgePageViewController.h"
+#import "BaseViewController.h"
 
-@interface KnowledgePageViewController ()
+@interface BaseViewController ()
 
 @end
 
-@implementation KnowledgePageViewController
+@implementation BaseViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -26,7 +26,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+	// Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning

@@ -12,6 +12,8 @@
 		F816502018C1B22F007F4061 /* page2.png in Resources */ = {isa = PBXBuildFile; fileRef = F816501D18C1B22F007F4061 /* page2.png */; };
 		F816502218C1B577007F4061 /* FirstQuestion.png in Resources */ = {isa = PBXBuildFile; fileRef = F816502118C1B577007F4061 /* FirstQuestion.png */; };
 		F8B48CBE18AD8FA7007AD0C3 /* page3.png in Resources */ = {isa = PBXBuildFile; fileRef = F8B48CBD18AD8FA7007AD0C3 /* page3.png */; };
+		F8BB257618C4448700066E8E /* PreKnowledgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8BB257518C4448700066E8E /* PreKnowledgeViewController.m */; };
+		F8BB258818C4F43D00066E8E /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8BB258718C4F43D00066E8E /* BaseViewController.m */; };
 		F8D17BD218AEA9B400864525 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8D17BD118AEA9B400864525 /* Images.xcassets */; };
 		FB60FB211895A3F200000D5A /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB60FB201895A3F200000D5A /* MapViewController.m */; };
 		FB60FB241895A76700000D5A /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB60FB231895A76700000D5A /* MainViewController.m */; };
@@ -49,6 +51,10 @@
 		F816501D18C1B22F007F4061 /* page2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = page2.png; sourceTree = "<group>"; };
 		F816502118C1B577007F4061 /* FirstQuestion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FirstQuestion.png; sourceTree = "<group>"; };
 		F8B48CBD18AD8FA7007AD0C3 /* page3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = page3.png; sourceTree = "<group>"; };
+		F8BB257418C4448700066E8E /* PreKnowledgeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreKnowledgeViewController.h; sourceTree = "<group>"; };
+		F8BB257518C4448700066E8E /* PreKnowledgeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreKnowledgeViewController.m; sourceTree = "<group>"; };
+		F8BB258618C4F43D00066E8E /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseViewController.h; path = OrganicQuest/BaseViewController.h; sourceTree = "<group>"; };
+		F8BB258718C4F43D00066E8E /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseViewController.m; path = OrganicQuest/BaseViewController.m; sourceTree = "<group>"; };
 		F8D17BD118AEA9B400864525 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FB60FB1F1895A3F200000D5A /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		FB60FB201895A3F200000D5A /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
@@ -107,6 +113,8 @@
 		FBA171BE18959BD100363AF7 = {
 			isa = PBXGroup;
 			children = (
+				F8BB258618C4F43D00066E8E /* BaseViewController.h */,
+				F8BB258718C4F43D00066E8E /* BaseViewController.m */,
 				FBA171D018959BD100363AF7 /* OrganicQuest */,
 				FBA171EF18959BD100363AF7 /* OrganicQuestTests */,
 				FBA171C918959BD100363AF7 /* Frameworks */,
@@ -137,10 +145,10 @@
 		FBA171D018959BD100363AF7 /* OrganicQuest */ = {
 			isa = PBXGroup;
 			children = (
+				FBA171DC18959BD100363AF7 /* Main.storyboard */,
 				F816501B18C1B22F007F4061 /* 274182_Papel-de-Parede-Mapa-Mundi-do-Mario_1920x1200.jpg */,
 				F816501C18C1B22F007F4061 /* page1.png */,
 				F816501D18C1B22F007F4061 /* page2.png */,
-				FBA171DC18959BD100363AF7 /* Main.storyboard */,
 				F816502118C1B577007F4061 /* FirstQuestion.png */,
 				FBA171D918959BD100363AF7 /* AppDelegate.h */,
 				FBA171DA18959BD100363AF7 /* AppDelegate.m */,
@@ -156,6 +164,8 @@
 				FB60FB2A1895ACB600000D5A /* BattleViewController.h */,
 				FB60FB2B1895ACB600000D5A /* BattleViewController.m */,
 				FB60FB2D1895AFC800000D5A /* KnowledgePageViewController.h */,
+				F8BB257418C4448700066E8E /* PreKnowledgeViewController.h */,
+				F8BB257518C4448700066E8E /* PreKnowledgeViewController.m */,
 				FB60FB2E1895AFC800000D5A /* KnowledgePageViewController.m */,
 				FBBF76971896011800AB02A0 /* KnowledgeContentViewController.h */,
 				FBBF76981896011800AB02A0 /* KnowledgeContentViewController.m */,
@@ -295,7 +305,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBA171E118959BD100363AF7 /* ViewController.m in Sources */,
+				F8BB258818C4F43D00066E8E /* BaseViewController.m in Sources */,
 				FB60FB2C1895ACB600000D5A /* BattleViewController.m in Sources */,
+				F8BB257618C4448700066E8E /* PreKnowledgeViewController.m in Sources */,
 				FBBF76991896011800AB02A0 /* KnowledgeContentViewController.m in Sources */,
 				FB60FB2F1895AFC800000D5A /* KnowledgePageViewController.m in Sources */,
 				FBA171DB18959BD100363AF7 /* AppDelegate.m in Sources */,
