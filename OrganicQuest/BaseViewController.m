@@ -31,7 +31,7 @@
     
     
     // Create page view controller
-    self.pageViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"PageViewController"];
+    self.pageViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"KnowledgePageViewController"];
     self.pageViewController.dataSource = self;
     
     KnowledgeContentViewController *startingViewController = [self viewControllerAtIndex:0];
@@ -88,8 +88,7 @@
     }
     
     // Create a new view controller and pass suitable data.
-    //may need to adjust "PageContentViewController" to "Knowledge"
-    KnowledgeContentViewController *pageContentViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"PageContentViewController"];
+    KnowledgeContentViewController *pageContentViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"KnowledgeContentViewController"];
     pageContentViewController.imageFile = self.pageImages[index];
     pageContentViewController.pageIndex = index;
     
