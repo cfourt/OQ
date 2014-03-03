@@ -379,6 +379,9 @@
                                 <state key="normal" title="Oh! I get it now. ">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="P8e-cy-Rre" kind="unwind" unwindAction="unwindToQuestion:" id="NMA-lY-AlT"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -398,6 +401,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g7b-y3-Xxa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="P8e-cy-Rre" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1981" y="-455"/>
         </scene>

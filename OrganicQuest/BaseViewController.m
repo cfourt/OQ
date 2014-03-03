@@ -26,9 +26,26 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+/*
     // Create the data model
+    NSInteger numQuestions = 1;
+    //This represents the number of answers in the current build for each question
+    NSArray *numAnswerPages [4];
+
+    //currentMapPosition is passed in
+    //need some code here...
+    numAnswerPages[currentMapPosition] //gets the number of answers for that position
+    //_pageImages gets populated with the correct fileNames
+        dim _pageImages [*numAnswerPages]
+        for (int j =0; j<= numAnswerPages[currentMapPosition]; j++)
+        {
+            _pageImages [j] = @"%dA%d", currentMapPosition, j
+        }
+    }
+*/
+    //rename to 1A1, 1A2
     _pageImages = @[@"FirstAnswer", @"FirstAnswer2", @"FirstAnswer3", @"FirstAnswer4"];
-    
+
     
     // Create page view controller
     self.pageViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"KnowledgePageViewController"];
