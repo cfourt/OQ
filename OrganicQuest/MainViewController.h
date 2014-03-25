@@ -12,4 +12,6 @@
 
 - (IBAction)unWindToStartMenu:(UIStoryboardSegue *)seque;
 
+extern int numQuestions;
+
 @end

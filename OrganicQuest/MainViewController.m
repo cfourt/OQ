@@ -8,6 +8,8 @@
 
 #import "MainViewController.h"
 
+int numQuestions = 10;
+
 @interface MainViewController ()
 
 @end
@@ -26,7 +28,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+	// Array containing all answers to various questions
+    NSArray *answersArray = @[@1,@3,@1,@2,@4,@2,@2,@3,@4,@1];
+    NSArray *questionsArray = [NSArray arrayWithObjects:
+                               [UIImage imageNamed:@"Question1.png"],
+                               [UIImage imageNamed:@"Question2.png"],
+                               nil];
+    // NSArray *set = [NSArray arrayWithObjects:[UIImage imageNamed:@"img1.png"]
 }
 
 - (void)didReceiveMemoryWarning
@@ -37,7 +45,8 @@
 
 -(IBAction)unWindToStartMenu:(UIStoryboardSegue *)seque
 {
-    
 }
+
+
 
 @end
