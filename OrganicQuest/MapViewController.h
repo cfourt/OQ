@@ -12,4 +12,6 @@
 
 @interface MapViewController : UIViewController 
 
+@property (weak, nonatomic) IBOutlet UILabel *currentPosition;
+
 @end

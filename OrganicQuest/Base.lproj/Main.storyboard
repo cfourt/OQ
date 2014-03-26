@@ -246,18 +246,25 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="274182_Papel-de-Parede-Mapa-Mundi-do-Mario_1920x1200.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Wm3-gK-JCa">
-                                <rect key="frame" x="1" y="-65" width="320" height="570"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Current Location:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jQY-by-81c">
+                                <rect key="frame" x="93" y="111" width="134" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="#" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="km7-3O-cyv">
+                                <rect key="frame" x="100" y="193" width="120" height="118"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="Uj2-ks-JHt"/>
+                                    <constraint firstAttribute="height" constant="118" id="pNz-1V-U6f"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="73"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="bottom" secondItem="Wm3-gK-JCa" secondAttribute="bottom" constant="-1" id="7AQ-8V-4F1"/>
-                            <constraint firstItem="Wm3-gK-JCa" firstAttribute="top" secondItem="LsO-oM-fk1" secondAttribute="top" constant="-65" id="J9d-ow-s9c"/>
-                            <constraint firstItem="Wm3-gK-JCa" firstAttribute="leading" secondItem="LsO-oM-fk1" secondAttribute="leading" constant="1" id="VHP-Qw-B4R"/>
-                            <constraint firstAttribute="trailing" secondItem="Wm3-gK-JCa" secondAttribute="trailing" constant="-1" id="afq-aY-aX7"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Knowledge Map" id="ZV1-4C-bV7">
                         <barButtonItem key="backBarButtonItem" title="Map" id="Z5i-mx-jNF"/>
@@ -270,6 +277,9 @@
                     </navigationItem>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="currentPosition" destination="km7-3O-cyv" id="Hhg-2d-pdf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nFk-JZ-5ix" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -286,45 +296,12 @@
                     <view key="view" contentMode="scaleToFill" id="ZGg-Vh-37Q">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Question1.png" translatesAutoresizingMaskIntoConstraints="NO" id="iT2-Gb-gDq">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z8f-pF-gaP">
-                                <rect key="frame" x="214" y="461" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i4B-lb-UC5">
-                                <rect key="frame" x="214" y="461" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="F8O-em-4nq" kind="unwind" unwindAction="unwindToMap:" id="Deb-QU-xmi"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MDc-mD-Hz1">
-                                <rect key="frame" x="48" y="307" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="taI-G3-a04" kind="push" id="3SN-Hz-UtB"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                     </view>
                     <navigationItem key="navigationItem" id="VG0-qs-lcp"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WRP-Sr-RbH" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="F8O-em-4nq" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="785" y="-458"/>
         </scene>
@@ -337,7 +314,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Jpe-RR-iKU"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="6eJ-Pz-FmF">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -407,8 +384,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="274182_Papel-de-Parede-Mapa-Mundi-do-Mario_1920x1200.jpg" width="1920" height="1200"/>
-        <image name="Question1.png" width="640" height="1136"/>
         <image name="page1.png" width="640" height="1136"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

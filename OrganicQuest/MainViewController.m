@@ -9,9 +9,11 @@
 #import "MainViewController.h"
 
 int numQuestions = 10;
+int currentQuestion = 1;
 
-@interface MainViewController ()
-
+@interface MainViewController (){
+int currentQuestion;
+}
 @end
 
 @implementation MainViewController
@@ -29,12 +31,9 @@ int numQuestions = 10;
 {
     [super viewDidLoad];
 	// Array containing all answers to various questions
-    NSArray *answersArray = @[@1,@3,@1,@2,@4,@2,@2,@3,@4,@1];
-    NSArray *questionsArray = [NSArray arrayWithObjects:
-                               [UIImage imageNamed:@"Question1.png"],
-                               [UIImage imageNamed:@"Question2.png"],
-                               nil];
-    // NSArray *set = [NSArray arrayWithObjects:[UIImage imageNamed:@"img1.png"]
+        //use this later instead of int currentQuestion
+    //NSInteger *currentLocation = NULL;
+    //*currentLocation = 0;
 }
 
 - (void)didReceiveMemoryWarning

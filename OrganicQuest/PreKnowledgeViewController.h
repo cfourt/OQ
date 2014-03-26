@@ -10,4 +10,7 @@
 
 @interface PreKnowledgeViewController : UIViewController
 
+@property NSArray *answersArray;
+@property NSArray *questionsArray;
+
 @end

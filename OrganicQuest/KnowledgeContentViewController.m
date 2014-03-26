@@ -26,7 +26,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    //does this go here?
     self.backgroundImageView.image = [UIImage imageNamed:self.imageFile];
 
 }

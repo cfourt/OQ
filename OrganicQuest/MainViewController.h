@@ -8,10 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MainViewController : UIViewController
+@interface MainViewController : UIViewController{
+//NSArray  *questionsArray;
+}
 
 - (IBAction)unWindToStartMenu:(UIStoryboardSegue *)seque;
 
 extern int numQuestions;
+
 
 @end
