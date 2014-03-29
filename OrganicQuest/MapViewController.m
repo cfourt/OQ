@@ -7,8 +7,8 @@
 //
 
 #import "MapViewController.h"
-
-
+#import "myVariables.h"
+#
 
 @interface MapViewController()
 
@@ -29,6 +29,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    self.currentLocationLabel.text = @"0";
 }
 
 - (void)didReceiveMemoryWarning
@@ -42,4 +43,10 @@
 }
 
 
+- (IBAction)incrementCurrentQuestion:(id)sender {
+    
+}
+
+- (IBAction)decrementCurrentQuestion:(id)sender {
+}
 @end

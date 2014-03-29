@@ -13,4 +13,6 @@
 @property NSArray *answersArray;
 @property NSArray *questionsArray;
 
+- (NSInteger) getCurrentQuestion;
+
 @end

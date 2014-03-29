@@ -8,12 +8,7 @@
 
 #import "MainViewController.h"
 
-int numQuestions = 10;
-int currentQuestion = 1;
-
-@interface MainViewController (){
-int currentQuestion;
-}
+@interface MainViewController ()
 @end
 
 @implementation MainViewController
@@ -22,19 +17,18 @@ int currentQuestion;
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
     }
     return self;
 }
 
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Array containing all answers to various questions
-        //use this later instead of int currentQuestion
-    //NSInteger *currentLocation = NULL;
-    //*currentLocation = 0;
-}
+    
+    
+    
+    }
 
 - (void)didReceiveMemoryWarning
 {
@@ -45,7 +39,4 @@ int currentQuestion;
 -(IBAction)unWindToStartMenu:(UIStoryboardSegue *)seque
 {
 }
-
-
-
 @end

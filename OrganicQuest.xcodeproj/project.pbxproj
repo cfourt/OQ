@@ -11,6 +11,7 @@
 		F816501F18C1B22F007F4061 /* page1.png in Resources */ = {isa = PBXBuildFile; fileRef = F816501C18C1B22F007F4061 /* page1.png */; };
 		F816502018C1B22F007F4061 /* page2.png in Resources */ = {isa = PBXBuildFile; fileRef = F816501D18C1B22F007F4061 /* page2.png */; };
 		F816502218C1B577007F4061 /* Question1.png in Resources */ = {isa = PBXBuildFile; fileRef = F816502118C1B577007F4061 /* Question1.png */; };
+		F859117F18E63AF60050AC37 /* myVariables.m in Sources */ = {isa = PBXBuildFile; fileRef = F859117E18E63AF60050AC37 /* myVariables.m */; };
 		F8A49CC818E34A510011217E /* Question2.png in Resources */ = {isa = PBXBuildFile; fileRef = F8A49CC718E34A510011217E /* Question2.png */; };
 		F8B48CBE18AD8FA7007AD0C3 /* page3.png in Resources */ = {isa = PBXBuildFile; fileRef = F8B48CBD18AD8FA7007AD0C3 /* page3.png */; };
 		F8BB257618C4448700066E8E /* PreKnowledgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8BB257518C4448700066E8E /* PreKnowledgeViewController.m */; };
@@ -55,6 +56,8 @@
 		F816501C18C1B22F007F4061 /* page1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = page1.png; sourceTree = "<group>"; };
 		F816501D18C1B22F007F4061 /* page2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = page2.png; sourceTree = "<group>"; };
 		F816502118C1B577007F4061 /* Question1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Question1.png; sourceTree = "<group>"; };
+		F859117D18E63AF60050AC37 /* myVariables.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myVariables.h; sourceTree = "<group>"; };
+		F859117E18E63AF60050AC37 /* myVariables.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = myVariables.m; sourceTree = "<group>"; };
 		F8A49CC718E34A510011217E /* Question2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Question2.png; sourceTree = "<group>"; };
 		F8B48CBD18AD8FA7007AD0C3 /* page3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = page3.png; sourceTree = "<group>"; };
 		F8BB257418C4448700066E8E /* PreKnowledgeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreKnowledgeViewController.h; sourceTree = "<group>"; };
@@ -123,6 +126,8 @@
 		FBA171BE18959BD100363AF7 = {
 			isa = PBXGroup;
 			children = (
+				F859117D18E63AF60050AC37 /* myVariables.h */,
+				F859117E18E63AF60050AC37 /* myVariables.m */,
 				F8BB259618C50F3F00066E8E /* FirstAnswer.png */,
 				F8BB259018C50DBB00066E8E /* FirstAnswer2.png */,
 				F8BB259118C50DBB00066E8E /* FirstAnswer3.png */,
@@ -330,6 +335,7 @@
 				F8BB257618C4448700066E8E /* PreKnowledgeViewController.m in Sources */,
 				FBBF76991896011800AB02A0 /* KnowledgeContentViewController.m in Sources */,
 				FB60FB2F1895AFC800000D5A /* KnowledgePageViewController.m in Sources */,
+				F859117F18E63AF60050AC37 /* myVariables.m in Sources */,
 				FBA171DB18959BD100363AF7 /* AppDelegate.m in Sources */,
 				FBA171D718959BD100363AF7 /* main.m in Sources */,
 				FB60FB241895A76700000D5A /* MainViewController.m in Sources */,

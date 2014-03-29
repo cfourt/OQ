@@ -8,6 +8,8 @@
 
 #import "PreKnowledgeViewController.h"
 #import "MainViewController.h"
+#import "myVariables.h"
+
 @interface PreKnowledgeViewController ()
 
 @end
@@ -23,6 +25,7 @@
     return self;
 }
 
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -34,7 +37,10 @@
     
     //creating the image view within Pre-KnowledgeView Controller
     //this will hold the question
-    UIImageView *imageView = [[UIImageView alloc] initWithImage:questionsArray[1]];
+    myVariables *globalVariables = [[myVariables alloc] init];
+    
+    NSLog(@"The current question is: %zd", globalVariables.currentQuestion);
+    UIImageView *imageView = [[UIImageView alloc] initWithImage:questionsArray[globalVariables.currentQuestion]];
     imageView.contentMode = UIViewContentModeScaleAspectFit;
     imageView.clipsToBounds = YES;
 
@@ -50,6 +56,11 @@
 }
 
 - (IBAction)unwindToQuestion:(UIStoryboardSegue *)segue{
+}
+
+
+- (NSInteger) getCurrentQuestion{
+    
 }
 
 @end
