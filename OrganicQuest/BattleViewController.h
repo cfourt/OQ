@@ -10,4 +10,6 @@
 
 @interface BattleViewController : UIViewController
 
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch;
+
 @end

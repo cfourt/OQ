@@ -7,11 +7,21 @@
 //
 
 #import "MainViewController.h"
+#import "ProjectVariables.h"
+#import "myVariables.h"
 
 @interface MainViewController ()
 @end
 
 @implementation MainViewController
+
+-(IBAction)unWindToStartMenu:(UIStoryboardSegue *)seque{}
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    NSLog (@"The currentQuestion property was passed to to the MainViewController with a value of %d", [myVariables currentQuestionStaticInt]);
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -21,22 +31,10 @@
     return self;
 }
 
-
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-    
-    
-    
-    }
-
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
--(IBAction)unWindToStartMenu:(UIStoryboardSegue *)seque
-{
-}
 @end

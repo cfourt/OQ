@@ -10,11 +10,9 @@
 #import "KnowledgeContentViewController.h"
 
 
-@interface MapViewController : UIViewController 
+@interface MapViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UILabel *currentPosition;
 @property (weak, nonatomic) IBOutlet UILabel *currentLocationLabel;
-- (IBAction)incrementCurrentQuestion:(id)sender;
-- (IBAction)decrementCurrentQuestion:(id)sender;
+
 
 @end

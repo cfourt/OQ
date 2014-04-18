@@ -56,8 +56,8 @@
 		F816501C18C1B22F007F4061 /* page1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = page1.png; sourceTree = "<group>"; };
 		F816501D18C1B22F007F4061 /* page2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = page2.png; sourceTree = "<group>"; };
 		F816502118C1B577007F4061 /* Question1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Question1.png; sourceTree = "<group>"; };
-		F859117D18E63AF60050AC37 /* myVariables.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myVariables.h; sourceTree = "<group>"; };
-		F859117E18E63AF60050AC37 /* myVariables.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = myVariables.m; sourceTree = "<group>"; };
+		F859117D18E63AF60050AC37 /* myVariables.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = myVariables.h; path = ../myVariables.h; sourceTree = "<group>"; };
+		F859117E18E63AF60050AC37 /* myVariables.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = myVariables.m; path = ../myVariables.m; sourceTree = "<group>"; };
 		F8A49CC718E34A510011217E /* Question2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Question2.png; sourceTree = "<group>"; };
 		F8B48CBD18AD8FA7007AD0C3 /* page3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = page3.png; sourceTree = "<group>"; };
 		F8BB257418C4448700066E8E /* PreKnowledgeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreKnowledgeViewController.h; sourceTree = "<group>"; };
@@ -126,8 +126,6 @@
 		FBA171BE18959BD100363AF7 = {
 			isa = PBXGroup;
 			children = (
-				F859117D18E63AF60050AC37 /* myVariables.h */,
-				F859117E18E63AF60050AC37 /* myVariables.m */,
 				F8BB259618C50F3F00066E8E /* FirstAnswer.png */,
 				F8BB259018C50DBB00066E8E /* FirstAnswer2.png */,
 				F8BB259118C50DBB00066E8E /* FirstAnswer3.png */,
@@ -165,6 +163,8 @@
 			isa = PBXGroup;
 			children = (
 				FBA171DC18959BD100363AF7 /* Main.storyboard */,
+				F859117D18E63AF60050AC37 /* myVariables.h */,
+				F859117E18E63AF60050AC37 /* myVariables.m */,
 				F816501B18C1B22F007F4061 /* 274182_Papel-de-Parede-Mapa-Mundi-do-Mario_1920x1200.jpg */,
 				F816501C18C1B22F007F4061 /* page1.png */,
 				F816501D18C1B22F007F4061 /* page2.png */,

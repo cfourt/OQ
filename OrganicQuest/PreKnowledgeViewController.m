@@ -26,6 +26,19 @@
 }
 
 
+- (void) weHaveTap:(int)buttonID{
+    
+}
+
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer
+shouldReceiveTouch:(UITouch *)touch {
+    
+    CGPoint pointOnScreen = [touch locationInView:nil];
+    NSLog(@"Point - %f, %f", pointOnScreen.x, pointOnScreen.y);
+    NSLog(@"Touch");
+    return NO; // handle the touch
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -35,15 +48,13 @@
                                [UIImage imageNamed:@"Question2.png"],
                                nil];
     
-    //creating the image view within Pre-KnowledgeView Controller
-    //this will hold the question
-    myVariables *globalVariables = [[myVariables alloc] init];
+
     
-    NSLog(@"The current question is: %zd", globalVariables.currentQuestion);
-    UIImageView *imageView = [[UIImageView alloc] initWithImage:questionsArray[globalVariables.currentQuestion]];
+    NSLog(@"The current question is: %zd", [myVariables currentQuestionStaticInt]);
+
+    UIImageView *imageView = [[UIImageView alloc] initWithImage:questionsArray[[myVariables currentQuestionStaticInt]]];
     imageView.contentMode = UIViewContentModeScaleAspectFit;
     imageView.clipsToBounds = YES;
-
     imageView.frame = CGRectMake(0,
                                  70, 320, 504);
     [self.view addSubview:imageView];
@@ -55,12 +66,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)unwindToQuestion:(UIStoryboardSegue *)segue{
-}
-
-
-- (NSInteger) getCurrentQuestion{
-    
-}
+- (IBAction)unwindToQuestion:(UIStoryboardSegue *)segue{}
 
 @end

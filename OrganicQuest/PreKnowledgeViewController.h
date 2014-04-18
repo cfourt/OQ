@@ -7,12 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "myVariables.h"
 
 @interface PreKnowledgeViewController : UIViewController
 
 @property NSArray *answersArray;
 @property NSArray *questionsArray;
 
-- (NSInteger) getCurrentQuestion;
+- (void) weHaveTap:(int)buttonID;
+
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer
+       shouldReceiveTouch:(UITouch *)touch;
 
 @end

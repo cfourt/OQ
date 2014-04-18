@@ -7,11 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "myVariables.h"
 
-@interface MainViewController : UIViewController{ NSInteger currentQuestion
-//NSArray  *questionsArray;
-    ;}
-
+@interface MainViewController : UIViewController
 - (IBAction)unWindToStartMenu:(UIStoryboardSegue *)seque;
-
 @end

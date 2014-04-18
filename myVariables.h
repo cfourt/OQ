@@ -8,13 +8,17 @@
 
 #import <Foundation/Foundation.h>
 
-@interface myVariables : NSObject{
-    NSInteger currentQuestion;
-    NSInteger numQuestions;
-}
 
--   (NSInteger) currentQuestion;
-- (NSInteger) numQuestions;
-- (void) resetCurrentQuestionToZero;
+
+@interface myVariables : NSObject{int currentQuestionInInterfaceDeclaration;}
+@property (getter = theCurrentQuestionIs) int currentQuestionInt;
+
++ (int)decrementCurrentQuestion:(id)sender;
++ (int)incrementCurrentQuestion:(id)sender;
++ (int) currentQuestionStaticInt;
+
+
+//wtf does this do?
++ (int)automaticallyNotifiesObserversOfCurrentQuestionInt;
 
 @end

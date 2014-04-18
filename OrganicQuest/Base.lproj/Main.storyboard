@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="amQ-Jh-5yq">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="amQ-Jh-5yq">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -16,19 +16,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h0B-7E-7zS">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h0B-7E-7zS">
                                 <rect key="frame" x="142" y="518" width="40" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Apply">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="60C-nk-5ua">
-                                <rect key="frame" x="142" y="518" width="40" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Apply">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
+                                <connections>
+                                    <segue destination="Wqo-3L-YN6" kind="unwind" unwindAction="unWindToStartMenu:" id="sMm-DX-spH"/>
+                                </connections>
                             </button>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="avd-b2-sMp">
                                 <rect key="frame" x="223" y="170" width="51" height="31"/>
@@ -66,33 +62,18 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iiu-6O-qUD">
-                                <rect key="frame" x="140" y="518" width="40" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Apply">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="Wqo-3L-YN6" kind="unwind" unwindAction="unWindToStartMenu:" id="bQu-cR-C2X"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="iiu-6O-qUD" firstAttribute="centerX" secondItem="B4m-Qi-bd4" secondAttribute="centerX" id="1yz-8k-IGo"/>
-                            <constraint firstItem="60C-nk-5ua" firstAttribute="leading" secondItem="c2D-Qx-TuJ" secondAttribute="leading" constant="142" id="3OR-YG-Ud7"/>
                             <constraint firstItem="B4m-Qi-bd4" firstAttribute="leading" secondItem="c2D-Qx-TuJ" secondAttribute="leading" constant="67" id="Bvw-Mb-H0t"/>
-                            <constraint firstItem="h0B-7E-7zS" firstAttribute="baseline" secondItem="60C-nk-5ua" secondAttribute="baseline" id="E4W-lR-qjh"/>
                             <constraint firstItem="Vfk-a1-Rgw" firstAttribute="leading" secondItem="NJR-wT-xKI" secondAttribute="trailing" constant="71" id="Eox-ll-HsY"/>
                             <constraint firstItem="avd-b2-sMp" firstAttribute="centerY" secondItem="OR1-lI-Eqr" secondAttribute="centerY" id="JS2-uD-3r1"/>
                             <constraint firstItem="SSj-6N-0cp" firstAttribute="centerY" secondItem="ZUp-nS-uNd" secondAttribute="centerY" id="OFv-Vd-a9t"/>
                             <constraint firstItem="ZUp-nS-uNd" firstAttribute="leading" secondItem="NJR-wT-xKI" secondAttribute="leading" id="V1E-UG-3I7"/>
                             <constraint firstAttribute="bottom" secondItem="h0B-7E-7zS" secondAttribute="bottom" constant="20" symbolic="YES" id="VP1-Hx-CC4"/>
-                            <constraint firstItem="h0B-7E-7zS" firstAttribute="leading" secondItem="60C-nk-5ua" secondAttribute="leading" id="WVM-pI-S9z"/>
                             <constraint firstItem="SSj-6N-0cp" firstAttribute="top" secondItem="avd-b2-sMp" secondAttribute="bottom" constant="47" id="aVw-YZ-H8v"/>
                             <constraint firstItem="SSj-6N-0cp" firstAttribute="leading" secondItem="Vfk-a1-Rgw" secondAttribute="leading" id="cF5-ka-7CM"/>
                             <constraint firstItem="avd-b2-sMp" firstAttribute="top" secondItem="B4m-Qi-bd4" secondAttribute="bottom" constant="96" id="e3L-bQ-2fZ"/>
-                            <constraint firstItem="60C-nk-5ua" firstAttribute="baseline" secondItem="iiu-6O-qUD" secondAttribute="baseline" id="eN5-Ob-o70"/>
                             <constraint firstItem="B4m-Qi-bd4" firstAttribute="top" secondItem="yDP-Xo-1FN" secondAttribute="bottom" constant="28" id="fqB-Wk-QjH"/>
                             <constraint firstItem="NJR-wT-xKI" firstAttribute="centerY" secondItem="Vfk-a1-Rgw" secondAttribute="centerY" id="g4s-qZ-dcH"/>
                             <constraint firstItem="OR1-lI-Eqr" firstAttribute="leading" secondItem="c2D-Qx-TuJ" secondAttribute="leading" constant="44" id="gZz-3u-f16"/>
@@ -195,9 +176,10 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="49x-VH-HQZ">
-                                <rect key="frame" x="37" y="546" width="252" height="2"/>
+                            <progressView hidden="YES" opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="49x-VH-HQZ">
+                                <rect key="frame" x="37" y="546" width="252" height="3"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.94790251358695654" green="0.94790251358695654" blue="0.94790251358695654" alpha="1" colorSpace="calibratedRGB"/>
                             </progressView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9hW-Pb-Uhb">
                                 <rect key="frame" x="22" y="454" width="273" height="30"/>
@@ -278,7 +260,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="decrementCurrentQuestion:" destination="Gme-hb-Tnr" eventType="touchUpInside" id="5Tz-Iq-nre"/>
+                                    <action selector="decrementCurrentQuestion:" destination="Gme-hb-Tnr" eventType="touchUpInside" id="GMV-yL-0Ag"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="44Q-Gp-XKT">
@@ -287,7 +269,7 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
                                 <state key="normal" title="+1"/>
                                 <connections>
-                                    <action selector="incrementCurrentQuestion:" destination="Gme-hb-Tnr" eventType="touchUpInside" id="sWM-0k-clS"/>
+                                    <action selector="incrementCurrentQuestion:" destination="Gme-hb-Tnr" eventType="touchUpInside" id="YKG-Cj-vuB"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -305,8 +287,7 @@
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <connections>
-                        <outlet property="currentLocationLabel" destination="km7-3O-cyv" id="4IO-DV-Zbo"/>
-                        <outlet property="currentPosition" destination="km7-3O-cyv" id="Hhg-2d-pdf"/>
+                        <outlet property="currentLocationLabel" destination="km7-3O-cyv" id="Ry5-Qa-wXl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nFk-JZ-5ix" userLabel="First Responder" sceneMemberID="firstResponder"/>
