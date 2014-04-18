@@ -11,6 +11,7 @@
 		F816501F18C1B22F007F4061 /* page1.png in Resources */ = {isa = PBXBuildFile; fileRef = F816501C18C1B22F007F4061 /* page1.png */; };
 		F816502018C1B22F007F4061 /* page2.png in Resources */ = {isa = PBXBuildFile; fileRef = F816501D18C1B22F007F4061 /* page2.png */; };
 		F816502218C1B577007F4061 /* Question1.png in Resources */ = {isa = PBXBuildFile; fileRef = F816502118C1B577007F4061 /* Question1.png */; };
+		F83B5A421901ED2B001A164E /* UIImageViewQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = F83B5A411901ED2B001A164E /* UIImageViewQuestion.m */; };
 		F859117F18E63AF60050AC37 /* myVariables.m in Sources */ = {isa = PBXBuildFile; fileRef = F859117E18E63AF60050AC37 /* myVariables.m */; };
 		F8A49CC818E34A510011217E /* Question2.png in Resources */ = {isa = PBXBuildFile; fileRef = F8A49CC718E34A510011217E /* Question2.png */; };
 		F8B48CBE18AD8FA7007AD0C3 /* page3.png in Resources */ = {isa = PBXBuildFile; fileRef = F8B48CBD18AD8FA7007AD0C3 /* page3.png */; };
@@ -56,6 +57,8 @@
 		F816501C18C1B22F007F4061 /* page1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = page1.png; sourceTree = "<group>"; };
 		F816501D18C1B22F007F4061 /* page2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = page2.png; sourceTree = "<group>"; };
 		F816502118C1B577007F4061 /* Question1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Question1.png; sourceTree = "<group>"; };
+		F83B5A401901ED2B001A164E /* UIImageViewQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageViewQuestion.h; sourceTree = "<group>"; };
+		F83B5A411901ED2B001A164E /* UIImageViewQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageViewQuestion.m; sourceTree = "<group>"; };
 		F859117D18E63AF60050AC37 /* myVariables.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = myVariables.h; path = ../myVariables.h; sourceTree = "<group>"; };
 		F859117E18E63AF60050AC37 /* myVariables.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = myVariables.m; path = ../myVariables.m; sourceTree = "<group>"; };
 		F8A49CC718E34A510011217E /* Question2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Question2.png; sourceTree = "<group>"; };
@@ -186,6 +189,8 @@
 				FB60FB2D1895AFC800000D5A /* KnowledgePageViewController.h */,
 				F8BB257418C4448700066E8E /* PreKnowledgeViewController.h */,
 				F8BB257518C4448700066E8E /* PreKnowledgeViewController.m */,
+				F83B5A401901ED2B001A164E /* UIImageViewQuestion.h */,
+				F83B5A411901ED2B001A164E /* UIImageViewQuestion.m */,
 				FB60FB2E1895AFC800000D5A /* KnowledgePageViewController.m */,
 				FBBF76971896011800AB02A0 /* KnowledgeContentViewController.h */,
 				FBBF76981896011800AB02A0 /* KnowledgeContentViewController.m */,
@@ -337,6 +342,7 @@
 				FB60FB2F1895AFC800000D5A /* KnowledgePageViewController.m in Sources */,
 				F859117F18E63AF60050AC37 /* myVariables.m in Sources */,
 				FBA171DB18959BD100363AF7 /* AppDelegate.m in Sources */,
+				F83B5A421901ED2B001A164E /* UIImageViewQuestion.m in Sources */,
 				FBA171D718959BD100363AF7 /* main.m in Sources */,
 				FB60FB241895A76700000D5A /* MainViewController.m in Sources */,
 				FB60FB211895A3F200000D5A /* MapViewController.m in Sources */,

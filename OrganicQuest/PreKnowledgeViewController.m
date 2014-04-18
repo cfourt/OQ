@@ -9,6 +9,7 @@
 #import "PreKnowledgeViewController.h"
 #import "MainViewController.h"
 #import "myVariables.h"
+#import "UIImageViewQuestion.h"
 
 @interface PreKnowledgeViewController ()
 
@@ -52,7 +53,7 @@ shouldReceiveTouch:(UITouch *)touch {
     
     NSLog(@"The current question is: %zd", [myVariables currentQuestionStaticInt]);
 
-    UIImageView *imageView = [[UIImageView alloc] initWithImage:questionsArray[[myVariables currentQuestionStaticInt]]];
+    UIImageViewQuestion *imageView = [[UIImageViewQuestion alloc] initWithImage:questionsArray[[myVariables currentQuestionStaticInt]]];
     imageView.contentMode = UIViewContentModeScaleAspectFit;
     imageView.clipsToBounds = YES;
     imageView.frame = CGRectMake(0,
