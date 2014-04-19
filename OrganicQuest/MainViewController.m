@@ -9,6 +9,7 @@
 #import "MainViewController.h"
 #import "ProjectVariables.h"
 #import "myVariables.h"
+#import "UIProgressViewHomeProgress.h"
 
 @interface MainViewController ()
 @end
@@ -21,7 +22,11 @@
 {
     [super viewDidLoad];
     NSLog (@"The currentQuestion property was passed to to the MainViewController with a value of %d", [myVariables currentQuestionStaticInt]);
-}
+   /* int progress = [myVariables currentQuestionStaticInt] / [myVariables numQuestions];
+    UIProgressViewHomeProgress *progressBar = [[UIProgressView init] alloc];
+    progressBar.progress = progress;*/
+                                   
+};
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

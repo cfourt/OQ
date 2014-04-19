@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F8022879190243B000E49163 /* UIProgressViewHomeProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = F8022878190243B000E49163 /* UIProgressViewHomeProgress.m */; };
 		F816501E18C1B22F007F4061 /* 274182_Papel-de-Parede-Mapa-Mundi-do-Mario_1920x1200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F816501B18C1B22F007F4061 /* 274182_Papel-de-Parede-Mapa-Mundi-do-Mario_1920x1200.jpg */; };
 		F816501F18C1B22F007F4061 /* page1.png in Resources */ = {isa = PBXBuildFile; fileRef = F816501C18C1B22F007F4061 /* page1.png */; };
 		F816502018C1B22F007F4061 /* page2.png in Resources */ = {isa = PBXBuildFile; fileRef = F816501D18C1B22F007F4061 /* page2.png */; };
@@ -53,6 +54,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F8022877190243B000E49163 /* UIProgressViewHomeProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIProgressViewHomeProgress.h; sourceTree = "<group>"; };
+		F8022878190243B000E49163 /* UIProgressViewHomeProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIProgressViewHomeProgress.m; sourceTree = "<group>"; };
 		F816501B18C1B22F007F4061 /* 274182_Papel-de-Parede-Mapa-Mundi-do-Mario_1920x1200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "274182_Papel-de-Parede-Mapa-Mundi-do-Mario_1920x1200.jpg"; sourceTree = "<group>"; };
 		F816501C18C1B22F007F4061 /* page1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = page1.png; sourceTree = "<group>"; };
 		F816501D18C1B22F007F4061 /* page2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = page2.png; sourceTree = "<group>"; };
@@ -166,6 +169,8 @@
 			isa = PBXGroup;
 			children = (
 				FBA171DC18959BD100363AF7 /* Main.storyboard */,
+				F8022877190243B000E49163 /* UIProgressViewHomeProgress.h */,
+				F8022878190243B000E49163 /* UIProgressViewHomeProgress.m */,
 				F859117D18E63AF60050AC37 /* myVariables.h */,
 				F859117E18E63AF60050AC37 /* myVariables.m */,
 				F816501B18C1B22F007F4061 /* 274182_Papel-de-Parede-Mapa-Mundi-do-Mario_1920x1200.jpg */,
@@ -346,6 +351,7 @@
 				F859117F18E63AF60050AC37 /* myVariables.m in Sources */,
 				FBA171DB18959BD100363AF7 /* AppDelegate.m in Sources */,
 				F83B5A421901ED2B001A164E /* UIImageViewQuestion.m in Sources */,
+				F8022879190243B000E49163 /* UIProgressViewHomeProgress.m in Sources */,
 				FBA171D718959BD100363AF7 /* main.m in Sources */,
 				FB60FB241895A76700000D5A /* MainViewController.m in Sources */,
 				FB60FB211895A3F200000D5A /* MapViewController.m in Sources */,

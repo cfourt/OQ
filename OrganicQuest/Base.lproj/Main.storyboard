@@ -176,10 +176,11 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <progressView hidden="YES" opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="49x-VH-HQZ">
-                                <rect key="frame" x="37" y="546" width="252" height="3"/>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.60000000000000009" translatesAutoresizingMaskIntoConstraints="NO" id="49x-VH-HQZ" customClass="UIProgressViewHomeProgress">
+                                <rect key="frame" x="37" y="546" width="252" height="2"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.94790251358695654" green="0.94790251358695654" blue="0.94790251358695654" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="progressTintColor" red="0.0" green="0.45015776159999998" blue="0.45527619120000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </progressView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9hW-Pb-Uhb">
                                 <rect key="frame" x="22" y="454" width="273" height="30"/>

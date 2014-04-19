@@ -11,12 +11,14 @@
 @implementation myVariables
 
 static int currentQuestionStaticInt =0 ;
+static int numQuestions = 10 ;
 
 + (int) currentQuestionStaticInt{
     return currentQuestionStaticInt;
 }
-
-
++ (int) numQuestions{
+    return numQuestions;
+}
 + (int) automaticallyNotifiesObserversOfCurrentQuestionInt{
     NSLog(@"%d", currentQuestionStaticInt);
     return currentQuestionStaticInt;
@@ -38,7 +40,6 @@ static int currentQuestionStaticInt =0 ;
     //}
     return currentQuestionStaticInt;
 }
-
 + (int)decrementCurrentQuestion:(id)sender {
     if (currentQuestionStaticInt > 0) {
         currentQuestionStaticInt --;
@@ -48,23 +49,3 @@ static int currentQuestionStaticInt =0 ;
 }
 
 @end
-
-
-
-/* should be able to access this all I want with a setter.
- - (void) resetCurrentQuestionToZero{
- _currentQuestionInt =0;
- }
- */
-/* Attempting to make a super jank static method to access the variable
- static int currentQuestionIs(int newVal){
- static int question = 0;
- if (newVal ==0) {
- return question;
- }
- else {
- question = newVal;
- return question;
- }
- }
- */

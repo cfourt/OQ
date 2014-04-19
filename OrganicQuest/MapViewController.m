@@ -9,8 +9,6 @@
 #import "MainViewController.h"
 #import "MapViewController.h"
 
-
-
 @interface MapViewController()
 
 @end
@@ -39,7 +37,7 @@
     
     NSLog(@"the currentQuestionLabel is %@", self.currentLocationLabel.text);
     NSLog(@"the current value of currentQuestionStaticInt is %d", [myVariables currentQuestionStaticInt]);
-    if ([self.currentLocationLabel.text integerValue] < 10) {
+    if ([self.currentLocationLabel.text integerValue] < [myVariables numQuestions]) {
         [myVariables incrementCurrentQuestion:(self)];
         NSLog(@"the value of globalVariables.currenQuestionInt was updated to %d", [myVariables currentQuestionStaticInt]);
     }

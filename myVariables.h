@@ -17,6 +17,7 @@
 + (int)incrementCurrentQuestion:(id)sender;
 + (int) currentQuestionStaticInt;
 
++ (int) numQuestions;
 
 //wtf does this do?
 + (int)automaticallyNotifiesObserversOfCurrentQuestionInt;
