@@ -10,17 +10,16 @@
 
 @implementation myVariables
 
-static int currentQuestionStaticInt =0 ;
-static int numQuestions = 10 ;
+//static int currentQuestionStaticInt =0 ;
+//static int numQuestions = 10 ;
 NSString* OQCurrentQuestionKey = @"currentQuestion";
 
-+ (int) currentQuestionStaticInt{
-    return currentQuestionStaticInt;
+
+- (int) numQuestions{
+    return _numQuestions;
 }
-+ (int) numQuestions{
-    return numQuestions;
-}
-+ (int) automaticallyNotifiesObserversOfCurrentQuestionInt{
+
+/*+ (int) automaticallyNotifiesObserversOfCurrentQuestionInt{
     NSLog(@"%d", currentQuestionStaticInt);
     return currentQuestionStaticInt;
 }
@@ -33,32 +32,34 @@ NSString* OQCurrentQuestionKey = @"currentQuestion";
     }
     return self;
 }
+*/
 
-+ (int)incrementCurrentQuestion:(id)sender {
+- (int)incrementCurrentQuestion:(id)sender {
     //if (currentQuestionStaticInt < 10) {
-        currentQuestionStaticInt ++;
-        NSLog (@"%d", currentQuestionStaticInt);
+    _currentQuestionInt++;
+    NSLog (@"%d", _currentQuestionInt);
     //}
-    return currentQuestionStaticInt;
+    return _currentQuestionInt;
 }
-+ (int)decrementCurrentQuestion:(id)sender {
-    if (currentQuestionStaticInt > 0) {
-        currentQuestionStaticInt --;
-        NSLog (@"%d", currentQuestionStaticInt);
+
+- (int)decrementCurrentQuestion:(id)sender {
+    if (_currentQuestionInt > 0) {
+        _currentQuestionInt --;
+        NSLog (@"%d", _currentQuestionInt);
     }
-    return currentQuestionStaticInt;
+    return _currentQuestionInt;
 }
 
 - (void)encodeWithCoder:(NSCoder *)encoder
 {
-    [encoder encodeInt:currentQuestionStaticInt forKey: OQCurrentQuestionKey];
+    [encoder encodeInt:_currentQuestionInt forKey: OQCurrentQuestionKey];
 }
 
 - (instancetype)initWithCoder:(NSCoder *)decoder
 {
     self = [self init];
     if (self) {
-        currentQuestionStaticInt = [decoder decodeDoubleForKey: OQCurrentQuestionKey];
+        _currentQuestionInt = [decoder decodeDoubleForKey: OQCurrentQuestionKey];
     }
     return self;
 }
@@ -70,7 +71,6 @@ NSString* OQCurrentQuestionKey = @"currentQuestion";
         myVariables* gameData = [NSKeyedUnarchiver unarchiveObjectWithData:decodedData];
         return gameData;
     }
-    
     return [[myVariables alloc] init];
 }
 
@@ -86,9 +86,9 @@ NSString* OQCurrentQuestionKey = @"currentQuestion";
     return filePath;
 }
 
-+ (int)updateCurrentQuestion:(int)newVal{
-    currentQuestionStaticInt = newVal;
-    return currentQuestionStaticInt;
+- (int)updateCurrentQuestion:(int)newVal{
+    _currentQuestionInt = newVal;
+    return _currentQuestionInt;
 }
 
 

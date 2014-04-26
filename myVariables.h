@@ -9,17 +9,18 @@
 #import <Foundation/Foundation.h>
 
 
-@interface myVariables : NSObject{int currentQuestionInInterfaceDeclaration;} <NSCoding>
+@interface myVariables : NSObject <NSCoding>
 
 @property (getter = theCurrentQuestionIs) int currentQuestionInt;
+@property (getter = numQuestionsIs) int numQuestions;
 
-+ (int)decrementCurrentQuestion:(id)sender;
-+ (int)incrementCurrentQuestion:(id)sender;
-+ (int) currentQuestionStaticInt;
+- (int)decrementCurrentQuestion:(id)sender;
+- (int)incrementCurrentQuestion:(id)sender;
 
+/*
 + (int) numQuestions;
 
 //wtf does this do?
 + (int)automaticallyNotifiesObserversOfCurrentQuestionInt;
-
+*/
 @end
