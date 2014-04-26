@@ -12,6 +12,7 @@
 
 static int currentQuestionStaticInt =0 ;
 static int numQuestions = 10 ;
+NSString* OQCurrentQuestionKey = @"currentQuestion";
 
 + (int) currentQuestionStaticInt{
     return currentQuestionStaticInt;
@@ -47,5 +48,48 @@ static int numQuestions = 10 ;
     }
     return currentQuestionStaticInt;
 }
+
+- (void)encodeWithCoder:(NSCoder *)encoder
+{
+    [encoder encodeInt:currentQuestionStaticInt forKey: OQCurrentQuestionKey];
+}
+
+- (instancetype)initWithCoder:(NSCoder *)decoder
+{
+    self = [self init];
+    if (self) {
+        currentQuestionStaticInt = [decoder decodeDoubleForKey: OQCurrentQuestionKey];
+    }
+    return self;
+}
+
++(instancetype)loadInstance
+{
+    NSData* decodedData = [NSData dataWithContentsOfFile: [myVariables filePath]];
+    if (decodedData) {
+        myVariables* gameData = [NSKeyedUnarchiver unarchiveObjectWithData:decodedData];
+        return gameData;
+    }
+    
+    return [[myVariables alloc] init];
+}
+
+
++(NSString*)filePath
+{
+    static NSString* filePath = nil;
+    if (!filePath) {
+        filePath =
+        [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject]
+         stringByAppendingPathComponent:@"gamedata"];
+    }
+    return filePath;
+}
+
++ (int)updateCurrentQuestion:(int)newVal{
+    currentQuestionStaticInt = newVal;
+    return currentQuestionStaticInt;
+}
+
 
 @end

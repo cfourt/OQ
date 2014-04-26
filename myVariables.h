@@ -9,8 +9,8 @@
 #import <Foundation/Foundation.h>
 
 
+@interface myVariables : NSObject{int currentQuestionInInterfaceDeclaration;} <NSCoding>
 
-@interface myVariables : NSObject{int currentQuestionInInterfaceDeclaration;}
 @property (getter = theCurrentQuestionIs) int currentQuestionInt;
 
 + (int)decrementCurrentQuestion:(id)sender;
