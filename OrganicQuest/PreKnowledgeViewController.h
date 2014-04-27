@@ -14,9 +14,5 @@
 @property NSArray *answersArray;
 @property NSArray *questionsArray;
 
-- (void) weHaveTap:(int)buttonID;
-
-- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer
-       shouldReceiveTouch:(UITouch *)touch;
-
+- (void)performSegueWithIdentifier:(NSString *)identifier sender:(id)sender;
 @end

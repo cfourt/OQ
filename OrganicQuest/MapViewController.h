@@ -14,5 +14,7 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *currentLocationLabel;
 
+- (IBAction)unwindToMap:(UIStoryboardSegue *)segue;
+
 
 @end

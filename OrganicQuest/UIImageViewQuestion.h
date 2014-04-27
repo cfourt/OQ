@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIImageViewQuestion : UIImageView
+@interface UIImageViewQuestion : UIImageView <UIAlertViewDelegate>
 
 @property (atomic, getter = touchOccuredHere, weak) UITouch* questionTouch;
 

@@ -28,9 +28,21 @@
 	// Do any additional setup after loading the view.
     
     //NSLog (@"The currentQuestionLabel in MapViewController is about to be set to: %d", [myVariables sharedGameData].currentQuestionInt);
-    [self printCurrentStatus];
+
     self.currentLocationLabel.text = [NSString stringWithFormat:@"%d", [myVariables sharedGameData].currentQuestionInt];
+    [self printCurrentStatus];
 }
+
+- (void) viewDidAppear:(BOOL)animated{
+    [self updateCurrentPosition];
+    [[myVariables sharedGameData] save];
+}
+
+-(void)updateCurrentPosition{
+    self.currentLocationLabel.text = [NSString stringWithFormat:@"%d", [myVariables sharedGameData].currentQuestionInt];
+    [self printCurrentStatus];
+}
+
 - (void)didReceiveMemoryWarning{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -38,8 +50,8 @@
 - (IBAction)unwindToMap:(UIStoryboardSegue *)segue{}
 - (IBAction)incrementCurrentQuestion:(id)sender {
     
-    NSLog(@"the currentQuestionLabel is %@", self.currentLocationLabel.text);
     [self printCurrentStatus];
+    NSLog([NSString stringWithFormat:@"the numer of questions is:%d", [myVariables sharedGameData].numQuestions]);
     if ([self.currentLocationLabel.text integerValue] < [myVariables sharedGameData].numQuestions) {
         [myVariables sharedGameData].currentQuestionInt ++;
         NSLog(@"the value of globalVariables.currenQuestionInt was updated to %d", [myVariables sharedGameData].currentQuestionInt);

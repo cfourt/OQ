@@ -13,22 +13,6 @@
 
 NSString* OQCurrentQuestionKey = @"currentQuestion";
 
-- (int) numQuestions{
-    _numQuestions = 10;
-    return _numQuestions;
-}
-
-/*
-- (instancetype)init
-{
-    self = [super init];
-    if (self) {
-        //well this is rad...
-    }
-    return self;
-}
-*/
-
 + (instancetype)sharedGameData {
     static id sharedInstance = nil;
     
@@ -40,6 +24,24 @@ NSString* OQCurrentQuestionKey = @"currentQuestion";
     return sharedInstance;
 }
 
++(instancetype)loadInstance {
+    NSData* decodedData = [NSData dataWithContentsOfFile: [myVariables filePath]];
+    if (decodedData) {
+        myVariables* gameData = [NSKeyedUnarchiver unarchiveObjectWithData:decodedData];
+        return gameData;
+    }
+    return [[myVariables alloc] init];
+}
+
++(NSString*)filePath {
+    static NSString* filePath = nil;
+    if (!filePath) {
+        filePath =
+        [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject]
+         stringByAppendingPathComponent:@"gamedata"];
+    }
+    return filePath;
+}
 
 - (int)incrementCurrentQuestion:(id)sender {
     if (_currentQuestionInt < 10) {
@@ -63,6 +65,9 @@ NSString* OQCurrentQuestionKey = @"currentQuestion";
 
 - (instancetype)initWithCoder:(NSCoder *)decoder {
     self = [self init];
+    self.answersArray = @[@1,@3,@1,@2,@4,@2,@2,@3,@4,@1];
+    self.numQuestions = sizeof(self.answersArray);
+    NSLog([NSString stringWithFormat:@"the number of questions is set to: %d"], _numQuestions);
     if (self) {
         _currentQuestionInt = [decoder decodeIntegerForKey: OQCurrentQuestionKey];
         NSLog([NSString stringWithFormat:@"_currentQuesitonInt = %d", _currentQuestionInt]);
@@ -76,29 +81,11 @@ NSString* OQCurrentQuestionKey = @"currentQuestion";
     [encodedData writeToFile:[myVariables filePath] atomically:YES];
 }
 
-+(instancetype)loadInstance {
-    NSData* decodedData = [NSData dataWithContentsOfFile: [myVariables filePath]];
-    if (decodedData) {
-        myVariables* gameData = [NSKeyedUnarchiver unarchiveObjectWithData:decodedData];
-        return gameData;
-    }
-    return [[myVariables alloc] init];
-}
-
-+(NSString*)filePath {
-    static NSString* filePath = nil;
-    if (!filePath) {
-        filePath =
-        [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject]
-         stringByAppendingPathComponent:@"gamedata"];
-    }
-    return filePath;
-}
-
 - (int)updateCurrentQuestion:(int)newVal {
     _currentQuestionInt = newVal;
     return _currentQuestionInt;
 }
+
 
 
 @end
