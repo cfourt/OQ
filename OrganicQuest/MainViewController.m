@@ -24,8 +24,12 @@
    /* int progress = [myVariables sharedGameData].currentQuestionInt / [myVariables sharedGameData].numQuestions;
     UIProgressViewHomeProgress *progressBar = [[UIProgressView init] alloc];
     progressBar.progress = progress;*/
-                                   
+
 };
+
+- (void) viewDidAppear:(BOOL)animated{
+    
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -42,3 +46,29 @@
 }
 
 @end
+
+/*
+ 
+ self.currentProgress.progress = [self getCurrentPos];
+ }
+ 
+ - (void)sendSubviewToBack:(UIView *)view{
+ 
+ }
+ 
+ - (float) getCurrentPos{
+ 
+ float floatme  = [myVariables sharedGameData].currentQuestionInt / [myVariables sharedGameData].numQuestions;
+ self.currentProgress.progress = floatme;
+ NSLog([NSString stringWithFormat:@"current question: %f", [myVariables sharedGameData].currentQuestionInt]);
+ NSLog([NSString stringWithFormat:@"num quesitons: %f", [myVariables sharedGameData].numQuestions]);
+ NSLog([NSString stringWithFormat:@"current position: %f", floatme]);
+ return floatme;
+ }
+ 
+ - (IBAction)showCurrentProgress:(id)sender{
+ float currentPos = [self getCurrentPos ];
+ UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Current Status" message:[NSString stringWithFormat:@"Your current position is %f", currentPos] delegate:nil cancelButtonTitle:@"Sweet" otherButtonTitles: nil];
+ [alert show];
+ }
+ */

@@ -19,6 +19,7 @@
     pageControl.currentPageIndicatorTintColor = [UIColor blackColor];
     pageControl.backgroundColor = [UIColor whiteColor];
     return YES;
+    self.window.tintColor = [UIColor colorWithRed:62 green:199 blue:128 alpha:1];
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application
