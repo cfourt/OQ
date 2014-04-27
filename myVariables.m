@@ -10,20 +10,15 @@
 
 @implementation myVariables
 
-//static int currentQuestionStaticInt =0 ;
-//static int numQuestions = 10 ;
+
 NSString* OQCurrentQuestionKey = @"currentQuestion";
 
-
 - (int) numQuestions{
+    _numQuestions = 10;
     return _numQuestions;
 }
 
-/*+ (int) automaticallyNotifiesObserversOfCurrentQuestionInt{
-    NSLog(@"%d", currentQuestionStaticInt);
-    return currentQuestionStaticInt;
-}
-
+/*
 - (instancetype)init
 {
     self = [super init];
@@ -34,11 +29,23 @@ NSString* OQCurrentQuestionKey = @"currentQuestion";
 }
 */
 
++ (instancetype)sharedGameData {
+    static id sharedInstance = nil;
+    
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        sharedInstance = [self loadInstance];
+    });
+    
+    return sharedInstance;
+}
+
+
 - (int)incrementCurrentQuestion:(id)sender {
-    //if (currentQuestionStaticInt < 10) {
+    if (_currentQuestionInt < 10) {
     _currentQuestionInt++;
     NSLog (@"%d", _currentQuestionInt);
-    //}
+    }
     return _currentQuestionInt;
 }
 
@@ -50,22 +57,26 @@ NSString* OQCurrentQuestionKey = @"currentQuestion";
     return _currentQuestionInt;
 }
 
-- (void)encodeWithCoder:(NSCoder *)encoder
-{
+- (void)encodeWithCoder:(NSCoder *)encoder {
     [encoder encodeInt:_currentQuestionInt forKey: OQCurrentQuestionKey];
 }
 
-- (instancetype)initWithCoder:(NSCoder *)decoder
-{
+- (instancetype)initWithCoder:(NSCoder *)decoder {
     self = [self init];
     if (self) {
-        _currentQuestionInt = [decoder decodeDoubleForKey: OQCurrentQuestionKey];
+        _currentQuestionInt = [decoder decodeIntegerForKey: OQCurrentQuestionKey];
+        NSLog([NSString stringWithFormat:@"_currentQuesitonInt = %d", _currentQuestionInt]);
     }
     return self;
 }
 
-+(instancetype)loadInstance
+-(void)save
 {
+    NSData* encodedData = [NSKeyedArchiver archivedDataWithRootObject: self];
+    [encodedData writeToFile:[myVariables filePath] atomically:YES];
+}
+
++(instancetype)loadInstance {
     NSData* decodedData = [NSData dataWithContentsOfFile: [myVariables filePath]];
     if (decodedData) {
         myVariables* gameData = [NSKeyedUnarchiver unarchiveObjectWithData:decodedData];
@@ -74,9 +85,7 @@ NSString* OQCurrentQuestionKey = @"currentQuestion";
     return [[myVariables alloc] init];
 }
 
-
-+(NSString*)filePath
-{
++(NSString*)filePath {
     static NSString* filePath = nil;
     if (!filePath) {
         filePath =
@@ -86,7 +95,7 @@ NSString* OQCurrentQuestionKey = @"currentQuestion";
     return filePath;
 }
 
-- (int)updateCurrentQuestion:(int)newVal{
+- (int)updateCurrentQuestion:(int)newVal {
     _currentQuestionInt = newVal;
     return _currentQuestionInt;
 }

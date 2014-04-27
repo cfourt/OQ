@@ -51,9 +51,9 @@ shouldReceiveTouch:(UITouch *)touch {
     
 
     
-    NSLog(@"The current question is: %zd", [myVariables currentQuestionStaticInt]);
+    NSLog(@"The current question is: %zd", [myVariables sharedGameData].currentQuestionInt);
 
-    UIImageViewQuestion *imageView = [[UIImageViewQuestion alloc] initWithImage:questionsArray[[myVariables currentQuestionStaticInt]]];
+    UIImageViewQuestion *imageView = [[UIImageViewQuestion alloc] initWithImage:questionsArray[[myVariables sharedGameData].currentQuestionInt]];
     imageView.contentMode = UIViewContentModeScaleAspectFit;
     imageView.clipsToBounds = YES;
     imageView.frame = CGRectMake(0,

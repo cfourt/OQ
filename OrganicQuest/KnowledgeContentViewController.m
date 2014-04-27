@@ -27,7 +27,6 @@
 {
     [super viewDidLoad];
     self.backgroundImageView.image = [UIImage imageNamed:self.imageFile];
-
 }
 
 - (void)didReceiveMemoryWarning

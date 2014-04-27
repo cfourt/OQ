@@ -21,12 +21,15 @@
     }
     return self;
 }
+
+
 - (void)viewDidLoad{
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-
-    NSLog (@"The currentQuestionLabel in MapViewController is about to be set to: %d", [myVariables currentQuestionStaticInt]);
-    self.currentLocationLabel.text = [NSString stringWithFormat:@"%d", [myVariables currentQuestionStaticInt]];
+    
+    //NSLog (@"The currentQuestionLabel in MapViewController is about to be set to: %d", [myVariables sharedGameData].currentQuestionInt);
+    [self printCurrentStatus];
+    self.currentLocationLabel.text = [NSString stringWithFormat:@"%d", [myVariables sharedGameData].currentQuestionInt];
 }
 - (void)didReceiveMemoryWarning{
     [super didReceiveMemoryWarning];
@@ -36,24 +39,32 @@
 - (IBAction)incrementCurrentQuestion:(id)sender {
     
     NSLog(@"the currentQuestionLabel is %@", self.currentLocationLabel.text);
-    NSLog(@"the current value of currentQuestionStaticInt is %d", [myVariables currentQuestionStaticInt]);
-    if ([self.currentLocationLabel.text integerValue] < [myVariables numQuestions]) {
-        [myVariables incrementCurrentQuestion:(self)];
-        NSLog(@"the value of globalVariables.currenQuestionInt was updated to %d", [myVariables currentQuestionStaticInt]);
+    [self printCurrentStatus];
+    if ([self.currentLocationLabel.text integerValue] < [myVariables sharedGameData].numQuestions) {
+        [myVariables sharedGameData].currentQuestionInt ++;
+        NSLog(@"the value of globalVariables.currenQuestionInt was updated to %d", [myVariables sharedGameData].currentQuestionInt);
     }
-    self.currentLocationLabel.text = [NSString stringWithFormat:@"%d",[myVariables currentQuestionStaticInt]];
-    NSLog([NSString stringWithFormat:@"text was updated to %@", self.currentLocationLabel.text]);
+    self.currentLocationLabel.text = [NSString stringWithFormat:@"%d",[myVariables sharedGameData].currentQuestionInt];
+    [[myVariables sharedGameData] save];
+    [self printCurrentStatus];
 }
 - (IBAction)decrementCurrentQuestion:(id)sender {
     
     NSLog(@"the currentQuestionLabel is %@", self.currentLocationLabel.text);
-    NSLog(@"the current value of currentQuestionStaticInt is %d", [myVariables currentQuestionStaticInt]);
+    [self printCurrentStatus];
     if (![self.currentLocationLabel.text  isEqualToString: @"0"]) {
-    [myVariables decrementCurrentQuestion:(self)];
-    NSLog(@"the value of globalVariables.currenQuestionInt was updated to %d", [myVariables currentQuestionStaticInt]);
+    [myVariables sharedGameData].currentQuestionInt --;
+    NSLog(@"the value of globalVariables.currenQuestionInt was updated to %d", [myVariables sharedGameData].currentQuestionInt);
     }
-    self.currentLocationLabel.text = [NSString stringWithFormat:@"%d",[myVariables currentQuestionStaticInt]];
-    NSLog([NSString stringWithFormat:@"text was updated to %@", self.currentLocationLabel.text]);
+    self.currentLocationLabel.text = [NSString stringWithFormat:@"%d",[myVariables sharedGameData].currentQuestionInt];
+    [[myVariables sharedGameData] save];
+    [self printCurrentStatus];
     
+}
+
+
+//helper functions
+- (void)printCurrentStatus{
+    NSLog([NSString stringWithFormat:@"current question was saved to %d and the current label displays %@", [myVariables sharedGameData].currentQuestionInt,self.currentLocationLabel.text]);
 }
 @end

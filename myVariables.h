@@ -16,11 +16,7 @@
 
 - (int)decrementCurrentQuestion:(id)sender;
 - (int)incrementCurrentQuestion:(id)sender;
++ (instancetype)sharedGameData;
+- (void)save;
 
-/*
-+ (int) numQuestions;
-
-//wtf does this do?
-+ (int)automaticallyNotifiesObserversOfCurrentQuestionInt;
-*/
 @end

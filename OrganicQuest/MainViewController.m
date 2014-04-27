@@ -21,8 +21,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    NSLog (@"The currentQuestion property was passed to to the MainViewController with a value of %d", [myVariables currentQuestionStaticInt]);
-   /* int progress = [myVariables currentQuestionStaticInt] / [myVariables numQuestions];
+   /* int progress = [myVariables sharedGameData].currentQuestionInt / [myVariables sharedGameData].numQuestions;
     UIProgressViewHomeProgress *progressBar = [[UIProgressView init] alloc];
     progressBar.progress = progress;*/
                                    
