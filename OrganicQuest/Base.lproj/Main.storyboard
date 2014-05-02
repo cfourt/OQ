@@ -163,9 +163,12 @@
                                 <rect key="frame" x="0.0" y="-16" width="320" height="540"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1fI-yK-KbE">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1fI-yK-KbE">
                                 <rect key="frame" x="136" y="309" width="57" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="QAG-PB-7P1"/>
+                                </constraints>
                                 <state key="normal" title="Settings">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -173,44 +176,21 @@
                                     <segue destination="j3Z-BP-kD6" kind="modal" id="HRt-15-4aB"/>
                                 </connections>
                             </button>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yow-ql-1L8">
-                                <rect key="frame" x="104" y="358" width="120" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="22" id="yu8-il-JnC"/>
-                                </constraints>
-                                <state key="normal" title="Load Game">
-                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NJM-NN-enl">
-                                <rect key="frame" x="123" y="408" width="83" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="83" id="nyc-Wx-939"/>
-                                </constraints>
-                                <state key="normal" title="Save Game">
-                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <progressView hidden="YES" opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" progress="0.60000000000000009" translatesAutoresizingMaskIntoConstraints="NO" id="49x-VH-HQZ" customClass="UIProgressViewHomeProgress">
-                                <rect key="frame" x="37" y="504" width="252" height="0.0"/>
+                            <progressView hidden="YES" opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.60000000000000009" translatesAutoresizingMaskIntoConstraints="NO" id="49x-VH-HQZ" customClass="UIProgressViewHomeProgress">
+                                <rect key="frame" x="37" y="504" width="252" height="2"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.94790251358695654" green="0.94790251358695654" blue="0.94790251358695654" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="UI8-rs-Jim"/>
+                                </constraints>
                                 <color key="progressTintColor" red="0.0" green="0.45015776159999998" blue="0.45527619120000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </progressView>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9hW-Pb-Uhb">
-                                <rect key="frame" x="24" y="459" width="273" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HYv-ib-U46">
+                                <rect key="frame" x="79" y="269" width="162" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Review Completed Sections">
-                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HYv-ib-U46">
-                                <rect key="frame" x="83" y="289" width="162" height="12"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="SWL-Rd-pBn"/>
+                                </constraints>
                                 <state key="normal" image="start.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -218,11 +198,11 @@
                                     <segue destination="Gme-hb-Tnr" kind="push" id="gA8-r3-Rb0"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YwS-5o-KbR">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YwS-5o-KbR">
                                 <rect key="frame" x="105" y="435" width="110" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="110" id="G0G-mH-vZJ"/>
+                                    <constraint firstAttribute="width" constant="110" id="X9c-ho-BJP"/>
                                 </constraints>
                                 <state key="normal" image="Creators.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -234,29 +214,20 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="5iC-JS-PgG" firstAttribute="centerX" secondItem="YwS-5o-KbR" secondAttribute="centerX" id="0EJ-Y1-MRv"/>
-                            <constraint firstAttribute="trailing" secondItem="5iC-JS-PgG" secondAttribute="trailing" id="10a-e7-fAI"/>
-                            <constraint firstItem="9hW-Pb-Uhb" firstAttribute="leading" secondItem="2TK-m3-Mri" secondAttribute="leading" constant="24" id="4HY-SE-AXG"/>
-                            <constraint firstItem="49x-VH-HQZ" firstAttribute="top" secondItem="YwS-5o-KbR" secondAttribute="bottom" constant="35" id="6Ir-Kq-rUH"/>
-                            <constraint firstItem="1fI-yK-KbE" firstAttribute="top" secondItem="HYv-ib-U46" secondAttribute="bottom" constant="8" symbolic="YES" id="9J7-gW-kfn"/>
-                            <constraint firstAttribute="trailing" secondItem="HYv-ib-U46" secondAttribute="trailing" constant="75" id="FP0-PP-kfD"/>
-                            <constraint firstItem="5iC-JS-PgG" firstAttribute="leading" secondItem="2TK-m3-Mri" secondAttribute="leading" id="JyS-dT-lMu"/>
-                            <constraint firstItem="5iC-JS-PgG" firstAttribute="top" secondItem="2TK-m3-Mri" secondAttribute="top" constant="-16" id="LSI-Gt-pMi"/>
-                            <constraint firstAttribute="trailing" secondItem="49x-VH-HQZ" secondAttribute="trailing" constant="31" id="Lwg-wO-zVT"/>
-                            <constraint firstItem="NJM-NN-enl" firstAttribute="top" secondItem="yow-ql-1L8" secondAttribute="bottom" constant="28" id="MGZ-Mw-zOT"/>
-                            <constraint firstItem="9hW-Pb-Uhb" firstAttribute="top" secondItem="NJM-NN-enl" secondAttribute="bottom" constant="21" id="OT4-KJ-NRu"/>
-                            <constraint firstItem="yow-ql-1L8" firstAttribute="centerX" secondItem="1fI-yK-KbE" secondAttribute="centerX" id="Qmf-cA-n8Y"/>
-                            <constraint firstAttribute="bottom" secondItem="49x-VH-HQZ" secondAttribute="bottom" constant="20" symbolic="YES" id="SZl-8E-E1j"/>
-                            <constraint firstItem="yow-ql-1L8" firstAttribute="top" secondItem="1fI-yK-KbE" secondAttribute="bottom" constant="19" id="TkM-Qb-moN"/>
-                            <constraint firstItem="YwS-5o-KbR" firstAttribute="centerX" secondItem="9hW-Pb-Uhb" secondAttribute="centerX" id="VTQ-B7-6VC"/>
-                            <constraint firstItem="49x-VH-HQZ" firstAttribute="top" secondItem="9hW-Pb-Uhb" secondAttribute="bottom" constant="15" id="aND-5O-W6T"/>
-                            <constraint firstItem="HYv-ib-U46" firstAttribute="top" secondItem="PV3-tV-88V" secondAttribute="bottom" constant="289" id="fNk-g4-uHV"/>
-                            <constraint firstAttribute="trailing" secondItem="yow-ql-1L8" secondAttribute="trailing" constant="96" id="kRs-ap-EAk"/>
-                            <constraint firstAttribute="bottom" secondItem="5iC-JS-PgG" secondAttribute="bottom" id="kf6-vD-6d6"/>
-                            <constraint firstItem="YwS-5o-KbR" firstAttribute="top" secondItem="yow-ql-1L8" secondAttribute="bottom" constant="55" id="lGg-h4-uaM"/>
-                            <constraint firstItem="1fI-yK-KbE" firstAttribute="centerX" secondItem="HYv-ib-U46" secondAttribute="centerX" id="oqI-ah-DDi"/>
-                            <constraint firstItem="NJM-NN-enl" firstAttribute="centerX" secondItem="yow-ql-1L8" secondAttribute="centerX" id="wOL-Pj-UGI"/>
-                            <constraint firstItem="49x-VH-HQZ" firstAttribute="leading" secondItem="2TK-m3-Mri" secondAttribute="leading" constant="37" id="xDV-qY-TVP"/>
+                            <constraint firstItem="5iC-JS-PgG" firstAttribute="leading" secondItem="2TK-m3-Mri" secondAttribute="leading" id="3vp-kQ-Ocr"/>
+                            <constraint firstItem="49x-VH-HQZ" firstAttribute="leading" secondItem="2TK-m3-Mri" secondAttribute="leading" constant="37" id="7xa-4x-OwV"/>
+                            <constraint firstAttribute="bottom" secondItem="5iC-JS-PgG" secondAttribute="bottom" id="9NE-hV-aAv"/>
+                            <constraint firstItem="Qd4-7C-NGe" firstAttribute="top" secondItem="49x-VH-HQZ" secondAttribute="bottom" constant="18" id="9ak-ZD-yju"/>
+                            <constraint firstItem="1fI-yK-KbE" firstAttribute="leading" secondItem="2TK-m3-Mri" secondAttribute="leading" constant="136" id="BBB-0q-q8K"/>
+                            <constraint firstItem="5iC-JS-PgG" firstAttribute="top" secondItem="2TK-m3-Mri" secondAttribute="top" constant="-16" id="Chk-I1-muV"/>
+                            <constraint firstItem="HYv-ib-U46" firstAttribute="centerX" secondItem="5iC-JS-PgG" secondAttribute="centerX" id="Egu-Dw-7s3"/>
+                            <constraint firstItem="HYv-ib-U46" firstAttribute="top" secondItem="PV3-tV-88V" secondAttribute="bottom" constant="269" id="RvL-ro-3RU"/>
+                            <constraint firstItem="HYv-ib-U46" firstAttribute="centerX" secondItem="YwS-5o-KbR" secondAttribute="centerX" id="T6U-A2-v2u"/>
+                            <constraint firstItem="49x-VH-HQZ" firstAttribute="top" secondItem="YwS-5o-KbR" secondAttribute="bottom" constant="35" id="gnP-kG-ovl"/>
+                            <constraint firstAttribute="trailing" secondItem="49x-VH-HQZ" secondAttribute="trailing" constant="31" id="l0j-Js-UBr"/>
+                            <constraint firstAttribute="trailing" secondItem="5iC-JS-PgG" secondAttribute="trailing" id="mnH-vC-NUG"/>
+                            <constraint firstItem="YwS-5o-KbR" firstAttribute="top" secondItem="1fI-yK-KbE" secondAttribute="bottom" constant="96" id="wxG-qu-UzT"/>
+                            <constraint firstItem="1fI-yK-KbE" firstAttribute="top" secondItem="PV3-tV-88V" secondAttribute="bottom" constant="309" id="zs6-Ry-k5T"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ClL-qP-5I5"/>

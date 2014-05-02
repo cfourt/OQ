@@ -52,7 +52,7 @@
 - (IBAction)incrementCurrentQuestion:(id)sender {
     
     [self printCurrentStatus];
-    NSLog([NSString stringWithFormat:@"the numer of questions is:%d", [myVariables sharedGameData].numQuestions]);
+    //NSLog([NSString stringWithFormat:@"the numer of questions is:%d", [myVariables sharedGameData].numQuestions]);
     if ([self.currentLocationLabel.text integerValue] < [myVariables sharedGameData].numQuestions) {
         [myVariables sharedGameData].currentQuestionInt ++;
         NSLog(@"the value of globalVariables.currenQuestionInt was updated to %d", [myVariables sharedGameData].currentQuestionInt);
@@ -78,6 +78,6 @@
 
 //helper functions
 - (void)printCurrentStatus{
-    NSLog([NSString stringWithFormat:@"current question was saved to %d and the current label displays %@", [myVariables sharedGameData].currentQuestionInt,self.currentLocationLabel.text]);
+   // NSLog([NSString stringWithFormat:@"current question was saved to %d and the current label displays %@", [myVariables sharedGameData].currentQuestionInt,self.currentLocationLabel.text]);
 }
 @end

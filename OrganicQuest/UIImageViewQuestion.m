@@ -56,8 +56,8 @@
     NSNumber *correctAnswer = localArray[[myVariables sharedGameData].currentQuestionInt];
     NSNumber *userAnswer = [NSNumber numberWithInt:chosenAnswer];
     
-    NSLog([NSString stringWithFormat:@"correct answer: %@", correctAnswer]);
-    NSLog([NSString stringWithFormat:@"user answer: %@", userAnswer]);
+   // NSLog([NSString stringWithFormat:@"correct answer: %@", correctAnswer]);
+   // NSLog([NSString stringWithFormat:@"user answer: %@", userAnswer]);
     
     if (userAnswer == correctAnswer) { // need to add convert to integer here?
 
@@ -74,7 +74,7 @@
         [myAlert show];
 
     }
-    NSLog([NSString stringWithFormat:@"The value of currentQuestion is: %d", [myVariables sharedGameData].currentQuestionInt]);
+   // NSLog([NSString stringWithFormat:@"The value of currentQuestion is: %d", [myVariables sharedGameData].currentQuestionInt]);
     
     //[[[MapViewController alloc]init] performSegueWithIdentifier:@"backToMap" sender:self];
 }

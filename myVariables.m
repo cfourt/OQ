@@ -67,10 +67,10 @@ NSString* OQCurrentQuestionKey = @"currentQuestion";
     self = [self init];
     self.answersArray = @[@1,@3,@1,@2,@4,@2,@2,@3,@4,@1];
     self.numQuestions = sizeof(self.answersArray);
-    NSLog([NSString stringWithFormat:@"the number of questions is set to: %d", _numQuestions]);
+    //NSLog([NSString stringWithFormat:@"the number of questions is set to: %d", _numQuestions]);
     if (self) {
-        _currentQuestionInt = [decoder decodeIntegerForKey: OQCurrentQuestionKey];
-        NSLog([NSString stringWithFormat:@"_currentQuesitonInt = %d", _currentQuestionInt]);
+        _currentQuestionInt = [decoder decodeIntForKey: OQCurrentQuestionKey];
+      //  NSLog([NSString stringWithFormat:@"_currentQuesitonInt = %d", _currentQuestionInt]);
     }
     return self;
 }
