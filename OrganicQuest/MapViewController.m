@@ -36,6 +36,7 @@
 - (void) viewDidAppear:(BOOL)animated{
     [self updateCurrentPosition];
     [[myVariables sharedGameData] save];
+    self.navigationController.navigationBarHidden = false;
 }
 
 -(void)updateCurrentPosition{

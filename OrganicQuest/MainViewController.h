@@ -11,4 +11,5 @@
 
 @interface MainViewController : UIViewController
 - (IBAction)unWindToStartMenu:(UIStoryboardSegue *)seque;
+-(BOOL)prefersStatusBarHidden;
 @end

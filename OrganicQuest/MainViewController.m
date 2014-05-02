@@ -21,11 +21,16 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-   /* int progress = [myVariables sharedGameData].currentQuestionInt / [myVariables sharedGameData].numQuestions;
-    UIProgressViewHomeProgress *progressBar = [[UIProgressView init] alloc];
-    progressBar.progress = progress;*/
                                    
 };
+
+-(BOOL)prefersStatusBarHidden{
+    return true;
+}
+
+- (void) viewDidAppear:(BOOL)animated{
+    self.navigationController.navigationBarHidden = true;
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
