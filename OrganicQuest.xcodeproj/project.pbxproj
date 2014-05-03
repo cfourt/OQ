@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		F8022879190243B000E49163 /* UIProgressViewHomeProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = F8022878190243B000E49163 /* UIProgressViewHomeProgress.m */; };
-		F816501E18C1B22F007F4061 /* 274182_Papel-de-Parede-Mapa-Mundi-do-Mario_1920x1200.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F816501B18C1B22F007F4061 /* 274182_Papel-de-Parede-Mapa-Mundi-do-Mario_1920x1200.jpg */; };
-		F816501F18C1B22F007F4061 /* page1.png in Resources */ = {isa = PBXBuildFile; fileRef = F816501C18C1B22F007F4061 /* page1.png */; };
-		F816502018C1B22F007F4061 /* page2.png in Resources */ = {isa = PBXBuildFile; fileRef = F816501D18C1B22F007F4061 /* page2.png */; };
 		F816502218C1B577007F4061 /* Question1.png in Resources */ = {isa = PBXBuildFile; fileRef = F816502118C1B577007F4061 /* Question1.png */; };
 		F83B5A421901ED2B001A164E /* UIImageViewQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = F83B5A411901ED2B001A164E /* UIImageViewQuestion.m */; };
 		F859117F18E63AF60050AC37 /* myVariables.m in Sources */ = {isa = PBXBuildFile; fileRef = F859117E18E63AF60050AC37 /* myVariables.m */; };
@@ -21,7 +18,6 @@
 		F8686AAB191361DD00BA46DE /* Contributors.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F8686AAA191361DD00BA46DE /* Contributors.jpg */; };
 		F8686AAD1913626F00BA46DE /* Cool.png in Resources */ = {isa = PBXBuildFile; fileRef = F8686AAC1913626F00BA46DE /* Cool.png */; };
 		F8A49CC818E34A510011217E /* Question2.png in Resources */ = {isa = PBXBuildFile; fileRef = F8A49CC718E34A510011217E /* Question2.png */; };
-		F8B48CBE18AD8FA7007AD0C3 /* page3.png in Resources */ = {isa = PBXBuildFile; fileRef = F8B48CBD18AD8FA7007AD0C3 /* page3.png */; };
 		F8BB257618C4448700066E8E /* PreKnowledgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8BB257518C4448700066E8E /* PreKnowledgeViewController.m */; };
 		F8BB258818C4F43D00066E8E /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8BB258718C4F43D00066E8E /* BaseViewController.m */; };
 		F8BB259318C50DBB00066E8E /* FirstAnswer2.png in Resources */ = {isa = PBXBuildFile; fileRef = F8BB259018C50DBB00066E8E /* FirstAnswer2.png */; };
@@ -62,10 +58,7 @@
 /* Begin PBXFileReference section */
 		F8022877190243B000E49163 /* UIProgressViewHomeProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIProgressViewHomeProgress.h; sourceTree = "<group>"; };
 		F8022878190243B000E49163 /* UIProgressViewHomeProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIProgressViewHomeProgress.m; sourceTree = "<group>"; };
-		F816501B18C1B22F007F4061 /* 274182_Papel-de-Parede-Mapa-Mundi-do-Mario_1920x1200.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "274182_Papel-de-Parede-Mapa-Mundi-do-Mario_1920x1200.jpg"; sourceTree = "<group>"; };
-		F816501C18C1B22F007F4061 /* page1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = page1.png; sourceTree = "<group>"; };
-		F816501D18C1B22F007F4061 /* page2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = page2.png; sourceTree = "<group>"; };
-		F816502118C1B577007F4061 /* Question1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Question1.png; sourceTree = "<group>"; };
+		F816502118C1B577007F4061 /* Question1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Question1.png; path = OrganicQuest/Question1.png; sourceTree = "<group>"; };
 		F83B5A401901ED2B001A164E /* UIImageViewQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageViewQuestion.h; sourceTree = "<group>"; };
 		F83B5A411901ED2B001A164E /* UIImageViewQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageViewQuestion.m; sourceTree = "<group>"; };
 		F859117D18E63AF60050AC37 /* myVariables.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = myVariables.h; path = ../myVariables.h; sourceTree = "<group>"; };
@@ -76,12 +69,11 @@
 		F8686AA719135E5E00BA46DE /* Creators.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Creators.png; sourceTree = "<group>"; };
 		F8686AAA191361DD00BA46DE /* Contributors.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Contributors.jpg; sourceTree = "<group>"; };
 		F8686AAC1913626F00BA46DE /* Cool.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cool.png; sourceTree = "<group>"; };
-		F8A49CC718E34A510011217E /* Question2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Question2.png; sourceTree = "<group>"; };
-		F8B48CBD18AD8FA7007AD0C3 /* page3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = page3.png; sourceTree = "<group>"; };
+		F8A49CC718E34A510011217E /* Question2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Question2.png; path = OrganicQuest/Question2.png; sourceTree = "<group>"; };
 		F8BB257418C4448700066E8E /* PreKnowledgeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreKnowledgeViewController.h; sourceTree = "<group>"; };
 		F8BB257518C4448700066E8E /* PreKnowledgeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreKnowledgeViewController.m; sourceTree = "<group>"; };
-		F8BB258618C4F43D00066E8E /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseViewController.h; path = OrganicQuest/BaseViewController.h; sourceTree = "<group>"; wrapsLines = 0; };
-		F8BB258718C4F43D00066E8E /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseViewController.m; path = OrganicQuest/BaseViewController.m; sourceTree = "<group>"; wrapsLines = 0; };
+		F8BB258618C4F43D00066E8E /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; wrapsLines = 0; };
+		F8BB258718C4F43D00066E8E /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; wrapsLines = 0; };
 		F8BB259018C50DBB00066E8E /* FirstAnswer2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FirstAnswer2.png; sourceTree = "<group>"; };
 		F8BB259118C50DBB00066E8E /* FirstAnswer3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FirstAnswer3.png; sourceTree = "<group>"; };
 		F8BB259218C50DBB00066E8E /* FirstAnswer4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FirstAnswer4.png; sourceTree = "<group>"; };
@@ -141,15 +133,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		FBA171BE18959BD100363AF7 = {
+		F83F51F11915A65000D22EF1 /* First Answer Series */ = {
 			isa = PBXGroup;
 			children = (
 				F8BB259618C50F3F00066E8E /* FirstAnswer.png */,
 				F8BB259018C50DBB00066E8E /* FirstAnswer2.png */,
 				F8BB259118C50DBB00066E8E /* FirstAnswer3.png */,
 				F8BB259218C50DBB00066E8E /* FirstAnswer4.png */,
-				F8BB258618C4F43D00066E8E /* BaseViewController.h */,
-				F8BB258718C4F43D00066E8E /* BaseViewController.m */,
+			);
+			name = "First Answer Series";
+			sourceTree = "<group>";
+		};
+		F83F51F21915A66600D22EF1 /* Questions */ = {
+			isa = PBXGroup;
+			children = (
+				F8A49CC718E34A510011217E /* Question2.png */,
+				F816502118C1B577007F4061 /* Question1.png */,
+			);
+			name = Questions;
+			sourceTree = "<group>";
+		};
+		F83F51F31915A6A300D22EF1 /* View Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F8686AAC1913626F00BA46DE /* Cool.png */,
+				F8686AAA191361DD00BA46DE /* Contributors.jpg */,
+				F8686AA619135E5E00BA46DE /* Creators-2.png */,
+				F8686AA719135E5E00BA46DE /* Creators.png */,
+				F8686AA419135D4300BA46DE /* start.png */,
+				F8686AA2191359D900BA46DE /* homeScreen.jpg */,
+			);
+			name = "View Resources";
+			path = OrganicQuest;
+			sourceTree = "<group>";
+		};
+		FBA171BE18959BD100363AF7 = {
+			isa = PBXGroup;
+			children = (
+				F83F51F31915A6A300D22EF1 /* View Resources */,
+				F83F51F11915A65000D22EF1 /* First Answer Series */,
+				F83F51F21915A66600D22EF1 /* Questions */,
 				FBA171D018959BD100363AF7 /* OrganicQuest */,
 				FBA171EF18959BD100363AF7 /* OrganicQuestTests */,
 				FBA171C918959BD100363AF7 /* Frameworks */,
@@ -180,43 +203,33 @@
 		FBA171D018959BD100363AF7 /* OrganicQuest */ = {
 			isa = PBXGroup;
 			children = (
-				FBA171DC18959BD100363AF7 /* Main.storyboard */,
-				F8686AAC1913626F00BA46DE /* Cool.png */,
-				F8686AAA191361DD00BA46DE /* Contributors.jpg */,
-				F8686AA619135E5E00BA46DE /* Creators-2.png */,
-				F8686AA719135E5E00BA46DE /* Creators.png */,
-				F8686AA419135D4300BA46DE /* start.png */,
-				F8686AA2191359D900BA46DE /* homeScreen.jpg */,
-				F8022877190243B000E49163 /* UIProgressViewHomeProgress.h */,
-				F8022878190243B000E49163 /* UIProgressViewHomeProgress.m */,
-				F859117D18E63AF60050AC37 /* myVariables.h */,
-				F859117E18E63AF60050AC37 /* myVariables.m */,
-				F816501B18C1B22F007F4061 /* 274182_Papel-de-Parede-Mapa-Mundi-do-Mario_1920x1200.jpg */,
-				F816501C18C1B22F007F4061 /* page1.png */,
-				F816501D18C1B22F007F4061 /* page2.png */,
-				F816502118C1B577007F4061 /* Question1.png */,
-				F8A49CC718E34A510011217E /* Question2.png */,
 				FBA171D918959BD100363AF7 /* AppDelegate.h */,
 				FBA171DA18959BD100363AF7 /* AppDelegate.m */,
-				F8D17BD118AEA9B400864525 /* Images.xcassets */,
-				F8B48CBD18AD8FA7007AD0C3 /* page3.png */,
-				FBA171DF18959BD100363AF7 /* ViewController.h */,
-				FBA171E018959BD100363AF7 /* ViewController.m */,
-				FBA171D118959BD100363AF7 /* Supporting Files */,
-				FB60FB1F1895A3F200000D5A /* MapViewController.h */,
-				FB60FB201895A3F200000D5A /* MapViewController.m */,
-				FB60FB221895A76700000D5A /* MainViewController.h */,
-				FB60FB231895A76700000D5A /* MainViewController.m */,
+				F8BB258618C4F43D00066E8E /* BaseViewController.h */,
+				F8BB258718C4F43D00066E8E /* BaseViewController.m */,
 				FB60FB2A1895ACB600000D5A /* BattleViewController.h */,
 				FB60FB2B1895ACB600000D5A /* BattleViewController.m */,
-				F8BB257418C4448700066E8E /* PreKnowledgeViewController.h */,
-				F8BB257518C4448700066E8E /* PreKnowledgeViewController.m */,
-				F83B5A401901ED2B001A164E /* UIImageViewQuestion.h */,
-				F83B5A411901ED2B001A164E /* UIImageViewQuestion.m */,
-				FB60FB2D1895AFC800000D5A /* KnowledgePageViewController.h */,
-				FB60FB2E1895AFC800000D5A /* KnowledgePageViewController.m */,
+				F8D17BD118AEA9B400864525 /* Images.xcassets */,
 				FBBF76971896011800AB02A0 /* KnowledgeContentViewController.h */,
 				FBBF76981896011800AB02A0 /* KnowledgeContentViewController.m */,
+				FB60FB2D1895AFC800000D5A /* KnowledgePageViewController.h */,
+				FB60FB2E1895AFC800000D5A /* KnowledgePageViewController.m */,
+				FBA171DC18959BD100363AF7 /* Main.storyboard */,
+				FB60FB221895A76700000D5A /* MainViewController.h */,
+				FB60FB231895A76700000D5A /* MainViewController.m */,
+				FB60FB1F1895A3F200000D5A /* MapViewController.h */,
+				FB60FB201895A3F200000D5A /* MapViewController.m */,
+				F859117D18E63AF60050AC37 /* myVariables.h */,
+				F859117E18E63AF60050AC37 /* myVariables.m */,
+				F8BB257418C4448700066E8E /* PreKnowledgeViewController.h */,
+				F8BB257518C4448700066E8E /* PreKnowledgeViewController.m */,
+				FBA171D118959BD100363AF7 /* Supporting Files */,
+				F83B5A401901ED2B001A164E /* UIImageViewQuestion.h */,
+				F83B5A411901ED2B001A164E /* UIImageViewQuestion.m */,
+				F8022877190243B000E49163 /* UIProgressViewHomeProgress.h */,
+				F8022878190243B000E49163 /* UIProgressViewHomeProgress.m */,
+				FBA171DF18959BD100363AF7 /* ViewController.h */,
+				FBA171E018959BD100363AF7 /* ViewController.m */,
 			);
 			path = OrganicQuest;
 			sourceTree = "<group>";
@@ -330,13 +343,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8D17BD218AEA9B400864525 /* Images.xcassets in Resources */,
-				F816501E18C1B22F007F4061 /* 274182_Papel-de-Parede-Mapa-Mundi-do-Mario_1920x1200.jpg in Resources */,
 				F8686AA919135E5E00BA46DE /* Creators.png in Resources */,
 				F8686AAB191361DD00BA46DE /* Contributors.jpg in Resources */,
 				F8BB259418C50DBB00066E8E /* FirstAnswer3.png in Resources */,
 				F8686AA819135E5E00BA46DE /* Creators-2.png in Resources */,
-				F816502018C1B22F007F4061 /* page2.png in Resources */,
-				F816501F18C1B22F007F4061 /* page1.png in Resources */,
 				F816502218C1B577007F4061 /* Question1.png in Resources */,
 				F8686AA3191359D900BA46DE /* homeScreen.jpg in Resources */,
 				F8686AAD1913626F00BA46DE /* Cool.png in Resources */,
@@ -345,7 +355,6 @@
 				FBA171D518959BD100363AF7 /* InfoPlist.strings in Resources */,
 				FBA171DE18959BD100363AF7 /* Main.storyboard in Resources */,
 				F8A49CC818E34A510011217E /* Question2.png in Resources */,
-				F8B48CBE18AD8FA7007AD0C3 /* page3.png in Resources */,
 				F8BB259718C50F3F00066E8E /* FirstAnswer.png in Resources */,
 				F8BB259318C50DBB00066E8E /* FirstAnswer2.png in Resources */,
 			);

@@ -170,11 +170,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "OrganicQuest/PreKnowledgeViewController.m"
-            timestampString = "420848464.228741"
+            timestampString = "420849166.502529"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
             landmarkName = "-viewDidLoad"
             landmarkType = "5">
          </BreakpointContent>
@@ -202,11 +202,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "OrganicQuest/UIImageViewQuestion.m"
-            timestampString = "420846801.790661"
+            timestampString = "420849166.502529"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "68"
-            endingLineNumber = "68"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
             landmarkName = "-touchesEnded:withEvent:"
             landmarkType = "5">
          </BreakpointContent>
@@ -218,11 +218,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "OrganicQuest/UIImageViewQuestion.m"
-            timestampString = "420846803.921513"
+            timestampString = "420849166.502529"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "72"
-            endingLineNumber = "72"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
             landmarkName = "-touchesEnded:withEvent:"
             landmarkType = "5">
          </BreakpointContent>
@@ -234,11 +234,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "OrganicQuest/UIImageViewQuestion.m"
-            timestampString = "420846893.133448"
+            timestampString = "420849166.502529"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "98"
-            endingLineNumber = "98"
+            startingLineNumber = "94"
+            endingLineNumber = "94"
             landmarkName = "-myAlert:didDismissWithButtonIndex:"
             landmarkType = "5">
          </BreakpointContent>
@@ -250,11 +250,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "OrganicQuest/UIImageViewQuestion.m"
-            timestampString = "420846979.159738"
+            timestampString = "420849166.502529"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "94"
-            endingLineNumber = "94"
+            startingLineNumber = "90"
+            endingLineNumber = "90"
             landmarkName = "-waitToUpdate:didDismissWithButtonIndex:"
             landmarkType = "5">
          </BreakpointContent>
