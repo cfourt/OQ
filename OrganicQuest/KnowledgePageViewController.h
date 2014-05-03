@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface KnowledgePageViewController : UIPageViewController
+-(BOOL)prefersStatusBarHidden;
 
 @end

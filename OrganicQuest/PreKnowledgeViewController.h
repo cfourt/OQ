@@ -12,8 +12,8 @@
 
 @interface PreKnowledgeViewController : UIViewController
 
-@property NSArray *answersArray;
-@property NSArray *questionsArray;
+    @property NSArray *answersArray;
+    @property NSArray *questionsArray;
 
--(void) returnToMap;
+
 @end

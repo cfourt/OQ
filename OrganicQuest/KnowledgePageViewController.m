@@ -29,6 +29,10 @@
     // Do any additional setup after loading the view.
 }
 
+-(BOOL)prefersStatusBarHidden{
+    return true;
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

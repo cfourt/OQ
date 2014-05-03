@@ -17,10 +17,6 @@
 
 @implementation PreKnowledgeViewController
 
-- (void) returnToMap{
-    [self performSegueWithIdentifier:@"unWindToMap" sender:self];
-    //[self performSegueWithIdentifier:@"returnToMap" sender:self];
-}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -31,10 +27,19 @@
     return self;
 }
 
+-(BOOL)prefersStatusBarHidden{
+    return false;
+}
+
+-(void)viewDidAppear:(BOOL)animated{
+    self.navigationController.navigationBarHidden = false;
+}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    
     
     NSArray *questionsArray = [NSArray arrayWithObjects:
                                [UIImage imageNamed:@"Question1.png"],
@@ -51,6 +56,7 @@
     imageView.frame = CGRectMake(0,0, 320, 504);
     [self.view addSubview:imageView];
     imageView.userInteractionEnabled = true;
+    imageView.preKnowledgeViewController = self;
     
 }
 
