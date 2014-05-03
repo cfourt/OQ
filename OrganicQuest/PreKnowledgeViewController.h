@@ -8,11 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import "myVariables.h"
+#import "MapViewController.h"
 
 @interface PreKnowledgeViewController : UIViewController
 
 @property NSArray *answersArray;
 @property NSArray *questionsArray;
 
-- (void)performSegueWithIdentifier:(NSString *)identifier sender:(id)sender;
+-(void) returnToMap;
 @end

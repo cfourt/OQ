@@ -11,7 +11,7 @@
 @interface UIImageViewQuestion : UIImageView <UIAlertViewDelegate>
 
 @property (atomic, getter = touchOccuredHere, weak) UITouch* questionTouch;
-
+@property (nonatomic, strong) NSNumber* gotTheAnswer;
 -(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event;
 
 @end

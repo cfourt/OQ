@@ -75,8 +75,7 @@ NSString* OQCurrentQuestionKey = @"currentQuestion";
     return self;
 }
 
--(void)save
-{
+-(void)save{
     NSData* encodedData = [NSKeyedArchiver archivedDataWithRootObject: self];
     [encodedData writeToFile:[myVariables filePath] atomically:YES];
 }

@@ -11,12 +11,15 @@
 #import "MapViewController.h"
 #import "PreKnowledgeViewController.h"
 
+
+
 @implementation UIImageViewQuestion 
 
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
+        self.gotTheAnswer = false;
         // Initialization code
     }
     return self;
@@ -31,8 +34,8 @@
     NSLog(@"X: %f, Y: %f",touchPoint.x, touchPoint.y);
     
     // which answer did they choose?
-    if (touchPoint.y > 283) {
-        if (touchPoint.y < 400) {
+    if (touchPoint.y > 270) {
+        if (touchPoint.y < 397) {
             if (touchPoint.x > 160){
                 chosenAnswer = 2;
             }
@@ -48,7 +51,10 @@
                 chosenAnswer =3;
             }
         }
-    } //else they touched above the answer options
+    }
+    else{
+        chosenAnswer =5;
+    }//else they touched above the answer options
     
     //check if they got it right
     
@@ -59,14 +65,23 @@
    // NSLog([NSString stringWithFormat:@"correct answer: %@", correctAnswer]);
    // NSLog([NSString stringWithFormat:@"user answer: %@", userAnswer]);
     
-    if (userAnswer == correctAnswer) { // need to add convert to integer here?
-
+    if (userAnswer == correctAnswer && ![_gotTheAnswer  isEqual: @1]) { // need to add convert to integer here?
+        _gotTheAnswer = @1;
         [myVariables sharedGameData].currentQuestionInt ++;
         
         UIAlertView *myAlert = [[UIAlertView alloc] initWithTitle: @"You got it!" message:@"Way to go. Head back to the previous page for the next challenge." delegate:nil cancelButtonTitle:@"Sweet!" otherButtonTitles: nil ];
         [myAlert show];
+        //[[[PreKnowledgeViewController alloc ] init ]returnToMap];
+        //[self performSegueWithIdentifier:@"unWindToMap" sender:self.superclass];
         
         //need to add return to maps after popping the message box. In the mean time, I can just give them directions to go back and see that they have indeed moved forward.
+    }
+    else if (chosenAnswer ==5){
+        NSLog(@"you chose the question");
+    }
+    else if ([_gotTheAnswer isEqual:@1]){
+        UIAlertView *myAlert = [[UIAlertView alloc] initWithTitle: @"You already got the answer" message:@"Head back to the map for more." delegate:nil cancelButtonTitle:@"Rad" otherButtonTitles: nil ];
+        [myAlert show];
     }
     else{
         //they didn't get it right!

@@ -17,6 +17,11 @@
 
 @implementation PreKnowledgeViewController
 
+- (void) returnToMap{
+    [self performSegueWithIdentifier:@"unWindToMap" sender:self];
+    //[self performSegueWithIdentifier:@"returnToMap" sender:self];
+}
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -26,9 +31,6 @@
     return self;
 }
 
-- (void)performSegueWithIdentifier:(NSString *)identifier sender:(id)sender{
-    
-}
 
 - (void)viewDidLoad
 {
@@ -46,7 +48,7 @@
     UIImageViewQuestion *imageView = [[UIImageViewQuestion alloc] initWithImage:questionsArray[[myVariables sharedGameData].currentQuestionInt]];
     imageView.contentMode = UIViewContentModeScaleAspectFit;
     imageView.clipsToBounds = YES;
-    imageView.frame = CGRectMake(0,70, 320, 504);
+    imageView.frame = CGRectMake(0,0, 320, 504);
     [self.view addSubview:imageView];
     imageView.userInteractionEnabled = true;
     
