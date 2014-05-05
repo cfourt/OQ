@@ -123,6 +123,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="dnB-mF-f0I"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XrF-ck-NBC" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="EkJ-7a-krU" userLabel="Exit" sceneMemberID="exit"/>
@@ -208,7 +210,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="zA7-g0-hqW" kind="modal" modalTransitionStyle="flipHorizontal" id="18f-cW-EGy"/>
+                                    <segue destination="zA7-g0-hqW" kind="modal" modalTransitionStyle="crossDissolve" id="18f-cW-EGy"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -440,9 +442,8 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WRP-Sr-RbH" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="fSR-Ob-5kF" userLabel="Exit" sceneMemberID="exit"/>
-                <tapGestureRecognizer id="448-Yb-JFO"/>
             </objects>
-            <point key="canvasLocation" x="865" y="-458"/>
+            <point key="canvasLocation" x="792" y="-467"/>
         </scene>
         <!--Base View Controller-->
         <scene sceneID="uVw-cC-HiM">
@@ -491,10 +492,12 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WQ8-33-t39">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WQ8-33-t39">
                                 <rect key="frame" x="65" y="518" width="191" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="15"/>
                                 <state key="normal" title="Oh! I get it now. ">
+                                    <color key="titleColor" red="0.0" green="0.45015776159999998" blue="0.45527619120000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -504,13 +507,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="WQ8-33-t39" secondAttribute="bottom" constant="20" symbolic="YES" id="BaT-7p-Pdz"/>
+                            <constraint firstItem="WQ8-33-t39" firstAttribute="leading" secondItem="Olj-dV-ZwZ" secondAttribute="leading" constant="65" id="3zO-Tc-naA"/>
                             <constraint firstItem="2GJ-LC-TpF" firstAttribute="top" secondItem="Olj-dV-ZwZ" secondAttribute="top" id="FSA-eq-7VC"/>
                             <constraint firstAttribute="bottom" secondItem="2GJ-LC-TpF" secondAttribute="bottom" id="cAk-Y9-ekx"/>
                             <constraint firstItem="2GJ-LC-TpF" firstAttribute="leading" secondItem="Olj-dV-ZwZ" secondAttribute="leading" id="d7O-ep-CcI"/>
-                            <constraint firstItem="WQ8-33-t39" firstAttribute="leading" secondItem="Olj-dV-ZwZ" secondAttribute="leading" constant="65" id="eqV-zw-TB7"/>
-                            <constraint firstItem="WQ8-33-t39" firstAttribute="centerX" secondItem="2GJ-LC-TpF" secondAttribute="centerX" id="h3x-ej-tEo"/>
                             <constraint firstAttribute="trailing" secondItem="2GJ-LC-TpF" secondAttribute="trailing" id="kN3-WG-VtN"/>
+                            <constraint firstItem="bAc-hC-rxX" firstAttribute="top" secondItem="WQ8-33-t39" secondAttribute="bottom" constant="20" id="oAf-bM-bUD"/>
                         </constraints>
                     </view>
                     <nil key="simulatedTopBarMetrics"/>
