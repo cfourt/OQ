@@ -66,11 +66,19 @@ NSString* OQCurrentQuestionKey = @"currentQuestion";
 - (instancetype)initWithCoder:(NSCoder *)decoder {
     self = [self init];
     self.answersArray = @[@1,@3,@1,@2,@4,@2,@2,@3,@4,@1];
-    self.numQuestions = sizeof(self.answersArray);
-    //NSLog([NSString stringWithFormat:@"the number of questions is set to: %d", _numQuestions]);
+    self.numQuestions = (int)[self.answersArray count];
+    
+    self.positionArrayX = [NSArray arrayWithObjects: [NSNumber numberWithInt:36],[NSNumber numberWithInt:19],[NSNumber numberWithInt:32], [NSNumber numberWithInt:55], [NSNumber numberWithInt:103], [NSNumber numberWithInt:142], [NSNumber numberWithInt:190], [NSNumber numberWithInt:194], [NSNumber numberWithInt:164], [NSNumber numberWithInt:176], nil];
+    int yMod = 100;
+    self.positionArrayY = [NSArray arrayWithObjects:[NSNumber numberWithInt:(270-yMod)], [NSNumber numberWithInt:(318-yMod)], [NSNumber numberWithInt:(342-yMod)], [NSNumber numberWithInt:(388-yMod)], [NSNumber numberWithInt:(424-yMod)], [NSNumber numberWithInt:(388-yMod)], [NSNumber numberWithInt:(390-yMod)], [NSNumber numberWithInt:(340-yMod)], [NSNumber numberWithInt:(319-yMod)], [NSNumber numberWithInt:(270-yMod)], nil];
+   
+   
+   
+    
+    
     if (self) {
         _currentQuestionInt = [decoder decodeIntForKey: OQCurrentQuestionKey];
-      //  NSLog([NSString stringWithFormat:@"_currentQuesitonInt = %d", _currentQuestionInt]);
+
     }
     return self;
 }
@@ -84,7 +92,5 @@ NSString* OQCurrentQuestionKey = @"currentQuestion";
     _currentQuestionInt = newVal;
     return _currentQuestionInt;
 }
-
-
 
 @end

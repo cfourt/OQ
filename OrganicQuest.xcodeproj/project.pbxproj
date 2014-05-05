@@ -9,8 +9,15 @@
 /* Begin PBXBuildFile section */
 		F8022879190243B000E49163 /* UIProgressViewHomeProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = F8022878190243B000E49163 /* UIProgressViewHomeProgress.m */; };
 		F816502218C1B577007F4061 /* Question1.png in Resources */ = {isa = PBXBuildFile; fileRef = F816502118C1B577007F4061 /* Question1.png */; };
+		F82B64C51917224700162EDB /* oqMapWithDots.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F82B64C21917224700162EDB /* oqMapWithDots.jpg */; };
+		F82B64C61917224700162EDB /* Percival.png in Resources */ = {isa = PBXBuildFile; fileRef = F82B64C31917224700162EDB /* Percival.png */; };
+		F82B64CA1917231800162EDB /* oqMapImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = F82B64C91917231800162EDB /* oqMapImageView.m */; };
+		F82B64CC1917454E00162EDB /* your_text.png in Resources */ = {isa = PBXBuildFile; fileRef = F82B64CB1917454E00162EDB /* your_text.png */; };
+		F82B64D21917484900162EDB /* Proceed-To-Next--2.png in Resources */ = {isa = PBXBuildFile; fileRef = F82B64D11917484900162EDB /* Proceed-To-Next--2.png */; };
+		F82B64D419174B8B00162EDB /* pixySSAnne.png in Resources */ = {isa = PBXBuildFile; fileRef = F82B64D319174B8B00162EDB /* pixySSAnne.png */; };
 		F83B5A421901ED2B001A164E /* UIImageViewQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = F83B5A411901ED2B001A164E /* UIImageViewQuestion.m */; };
 		F859117F18E63AF60050AC37 /* myVariables.m in Sources */ = {isa = PBXBuildFile; fileRef = F859117E18E63AF60050AC37 /* myVariables.m */; };
+		F859A66A19174C9D00945AC1 /* pixySSAnneRight.png in Resources */ = {isa = PBXBuildFile; fileRef = F859A66919174C9D00945AC1 /* pixySSAnneRight.png */; };
 		F8686AA3191359D900BA46DE /* homeScreen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F8686AA2191359D900BA46DE /* homeScreen.jpg */; };
 		F8686AA519135D4300BA46DE /* start.png in Resources */ = {isa = PBXBuildFile; fileRef = F8686AA419135D4300BA46DE /* start.png */; };
 		F8686AA819135E5E00BA46DE /* Creators-2.png in Resources */ = {isa = PBXBuildFile; fileRef = F8686AA619135E5E00BA46DE /* Creators-2.png */; };
@@ -59,10 +66,18 @@
 		F8022877190243B000E49163 /* UIProgressViewHomeProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIProgressViewHomeProgress.h; sourceTree = "<group>"; };
 		F8022878190243B000E49163 /* UIProgressViewHomeProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIProgressViewHomeProgress.m; sourceTree = "<group>"; };
 		F816502118C1B577007F4061 /* Question1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Question1.png; path = OrganicQuest/Question1.png; sourceTree = "<group>"; };
+		F82B64C21917224700162EDB /* oqMapWithDots.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = oqMapWithDots.jpg; path = ../oqMapWithDots.jpg; sourceTree = "<group>"; };
+		F82B64C31917224700162EDB /* Percival.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Percival.png; path = ../Percival.png; sourceTree = "<group>"; };
+		F82B64C81917231800162EDB /* oqMapImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = oqMapImageView.h; sourceTree = "<group>"; };
+		F82B64C91917231800162EDB /* oqMapImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = oqMapImageView.m; sourceTree = "<group>"; };
+		F82B64CB1917454E00162EDB /* your_text.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = your_text.png; sourceTree = "<group>"; };
+		F82B64D11917484900162EDB /* Proceed-To-Next--2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Proceed-To-Next--2.png"; sourceTree = "<group>"; };
+		F82B64D319174B8B00162EDB /* pixySSAnne.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pixySSAnne.png; sourceTree = "<group>"; };
 		F83B5A401901ED2B001A164E /* UIImageViewQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageViewQuestion.h; sourceTree = "<group>"; };
 		F83B5A411901ED2B001A164E /* UIImageViewQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageViewQuestion.m; sourceTree = "<group>"; };
 		F859117D18E63AF60050AC37 /* myVariables.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = myVariables.h; path = ../myVariables.h; sourceTree = "<group>"; };
 		F859117E18E63AF60050AC37 /* myVariables.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = myVariables.m; path = ../myVariables.m; sourceTree = "<group>"; };
+		F859A66919174C9D00945AC1 /* pixySSAnneRight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pixySSAnneRight.png; path = ../pixySSAnneRight.png; sourceTree = "<group>"; };
 		F8686AA2191359D900BA46DE /* homeScreen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = homeScreen.jpg; sourceTree = "<group>"; };
 		F8686AA419135D4300BA46DE /* start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = start.png; sourceTree = "<group>"; };
 		F8686AA619135E5E00BA46DE /* Creators-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Creators-2.png"; sourceTree = "<group>"; };
@@ -156,9 +171,14 @@
 		F83F51F31915A6A300D22EF1 /* View Resources */ = {
 			isa = PBXGroup;
 			children = (
+				F859A66919174C9D00945AC1 /* pixySSAnneRight.png */,
+				F82B64CB1917454E00162EDB /* your_text.png */,
+				F82B64C21917224700162EDB /* oqMapWithDots.jpg */,
+				F82B64C31917224700162EDB /* Percival.png */,
 				F8686AAC1913626F00BA46DE /* Cool.png */,
 				F8686AAA191361DD00BA46DE /* Contributors.jpg */,
 				F8686AA619135E5E00BA46DE /* Creators-2.png */,
+				F82B64D11917484900162EDB /* Proceed-To-Next--2.png */,
 				F8686AA719135E5E00BA46DE /* Creators.png */,
 				F8686AA419135D4300BA46DE /* start.png */,
 				F8686AA2191359D900BA46DE /* homeScreen.jpg */,
@@ -215,12 +235,15 @@
 				FB60FB2D1895AFC800000D5A /* KnowledgePageViewController.h */,
 				FB60FB2E1895AFC800000D5A /* KnowledgePageViewController.m */,
 				FBA171DC18959BD100363AF7 /* Main.storyboard */,
+				F82B64D319174B8B00162EDB /* pixySSAnne.png */,
 				FB60FB221895A76700000D5A /* MainViewController.h */,
 				FB60FB231895A76700000D5A /* MainViewController.m */,
 				FB60FB1F1895A3F200000D5A /* MapViewController.h */,
 				FB60FB201895A3F200000D5A /* MapViewController.m */,
 				F859117D18E63AF60050AC37 /* myVariables.h */,
 				F859117E18E63AF60050AC37 /* myVariables.m */,
+				F82B64C81917231800162EDB /* oqMapImageView.h */,
+				F82B64C91917231800162EDB /* oqMapImageView.m */,
 				F8BB257418C4448700066E8E /* PreKnowledgeViewController.h */,
 				F8BB257518C4448700066E8E /* PreKnowledgeViewController.m */,
 				FBA171D118959BD100363AF7 /* Supporting Files */,
@@ -342,10 +365,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F859A66A19174C9D00945AC1 /* pixySSAnneRight.png in Resources */,
 				F8D17BD218AEA9B400864525 /* Images.xcassets in Resources */,
+				F82B64D21917484900162EDB /* Proceed-To-Next--2.png in Resources */,
 				F8686AA919135E5E00BA46DE /* Creators.png in Resources */,
+				F82B64CC1917454E00162EDB /* your_text.png in Resources */,
 				F8686AAB191361DD00BA46DE /* Contributors.jpg in Resources */,
 				F8BB259418C50DBB00066E8E /* FirstAnswer3.png in Resources */,
+				F82B64C51917224700162EDB /* oqMapWithDots.jpg in Resources */,
 				F8686AA819135E5E00BA46DE /* Creators-2.png in Resources */,
 				F816502218C1B577007F4061 /* Question1.png in Resources */,
 				F8686AA3191359D900BA46DE /* homeScreen.jpg in Resources */,
@@ -355,7 +382,9 @@
 				FBA171D518959BD100363AF7 /* InfoPlist.strings in Resources */,
 				FBA171DE18959BD100363AF7 /* Main.storyboard in Resources */,
 				F8A49CC818E34A510011217E /* Question2.png in Resources */,
+				F82B64D419174B8B00162EDB /* pixySSAnne.png in Resources */,
 				F8BB259718C50F3F00066E8E /* FirstAnswer.png in Resources */,
+				F82B64C61917224700162EDB /* Percival.png in Resources */,
 				F8BB259318C50DBB00066E8E /* FirstAnswer2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -388,6 +417,7 @@
 				FBA171D718959BD100363AF7 /* main.m in Sources */,
 				FB60FB241895A76700000D5A /* MainViewController.m in Sources */,
 				FB60FB211895A3F200000D5A /* MapViewController.m in Sources */,
+				F82B64CA1917231800162EDB /* oqMapImageView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

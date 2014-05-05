@@ -13,8 +13,15 @@
 @interface MapViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UILabel *currentLocationLabel;
+@property (weak, nonatomic) IBOutlet UIButton *proceedLabel;
+@property int mapPosition;
 
 - (IBAction)unwindToMap:(UIStoryboardSegue *)segue;
+@property (weak, nonatomic) IBOutlet UILabel *outOf;
+@property (weak, nonatomic) IBOutlet UIImageView *percival;
 
+
+- (IBAction)godminus:(id)sender;
+- (IBAction)godPlus:(id)sender;
 
 @end

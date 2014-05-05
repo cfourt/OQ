@@ -8,10 +8,12 @@
 
 #import "MainViewController.h"
 #import "MapViewController.h"
+#import "myVariables.h"
 
 @interface MapViewController()
 
 @end
+
 
 @implementation MapViewController
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil{
@@ -23,25 +25,65 @@
 }
 
 
+- (IBAction)godminus:(id)sender {
+    NSLog(@" it was %d", [myVariables sharedGameData].currentQuestionInt);
+    [myVariables sharedGameData].currentQuestionInt --;
+    NSLog(@" now it's %d", [myVariables sharedGameData].currentQuestionInt);
+
+}
+
+- (IBAction)godPlus:(id)sender {
+    NSLog(@" it was %d", [myVariables sharedGameData].currentQuestionInt);
+    [myVariables sharedGameData].currentQuestionInt ++;
+    NSLog(@" now it's %d", [myVariables sharedGameData].currentQuestionInt);
+}
+
 - (void)viewDidLoad{
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
-    
-    //NSLog (@"The currentQuestionLabel in MapViewController is about to be set to: %d", [myVariables sharedGameData].currentQuestionInt);
-
-    self.currentLocationLabel.text = [NSString stringWithFormat:@"%d", [myVariables sharedGameData].currentQuestionInt];
-    [self printCurrentStatus];
+    _mapPosition = [myVariables sharedGameData].currentQuestionInt;
+    [self updateCurrentPosition];
 }
 
 - (void) viewDidAppear:(BOOL)animated{
+    
+    self.navigationController.navigationBarHidden = true;
     [self updateCurrentPosition];
     [[myVariables sharedGameData] save];
-    self.navigationController.navigationBarHidden = false;
+
+}
+
+- (BOOL)prefersStatusBarHidden{
+    return true;
 }
 
 -(void)updateCurrentPosition{
-    self.currentLocationLabel.text = [NSString stringWithFormat:@"%d", [myVariables sharedGameData].currentQuestionInt];
-    [self printCurrentStatus];
+    //local storage
+    int currentQuestion = [myVariables sharedGameData].currentQuestionInt;
+    
+    //update labels
+    self.currentLocationLabel.text = [NSString stringWithFormat:@"%d", (_mapPosition +1)];
+    self.outOf.text = [NSString stringWithFormat:@"/%d", [myVariables sharedGameData].numQuestions];
+
+    //render Percival
+    NSArray* xPositionArray = [myVariables sharedGameData].positionArrayX;
+    NSArray* yPositionArray = [myVariables sharedGameData].positionArrayY;
+
+    int xPos = [xPositionArray[_mapPosition] intValue];
+    int yPos = [yPositionArray[_mapPosition] intValue];
+    
+    _percival.frame = CGRectMake(xPos, yPos, 135, 72);
+    
+    NSLog(@"map position: %d", (int)_mapPosition);
+    NSLog(@"current question: %d", currentQuestion);
+    
+    //Show/Don't Show proceed label
+    if ((int)_mapPosition == currentQuestion) {
+        self.proceedLabel.hidden = false;
+    }
+    else{
+        self.proceedLabel.hidden = true;
+    }
+    
 }
 
 - (void)didReceiveMemoryWarning{
@@ -49,35 +91,21 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)unwindToMap:(UIStoryboardSegue *)segue{}
+
 - (IBAction)incrementCurrentQuestion:(id)sender {
-    
-    [self printCurrentStatus];
-    //NSLog([NSString stringWithFormat:@"the numer of questions is:%d", [myVariables sharedGameData].numQuestions]);
-    if ([self.currentLocationLabel.text integerValue] < [myVariables sharedGameData].numQuestions) {
-        [myVariables sharedGameData].currentQuestionInt ++;
-        NSLog(@"the value of globalVariables.currenQuestionInt was updated to %d", [myVariables sharedGameData].currentQuestionInt);
+    NSLog(@"Num Questions:%d,mapPos: %d,CurrentQuestion: %d ", [myVariables sharedGameData].numQuestions, _mapPosition, [myVariables sharedGameData].currentQuestionInt);
+    if ((_mapPosition + 1) < ([myVariables sharedGameData].numQuestions) && (_mapPosition < [myVariables sharedGameData].currentQuestionInt)) {
+        _mapPosition++;
     }
-    self.currentLocationLabel.text = [NSString stringWithFormat:@"%d",[myVariables sharedGameData].currentQuestionInt];
-    [[myVariables sharedGameData] save];
-    [self printCurrentStatus];
+    [self updateCurrentPosition];
 }
+
 - (IBAction)decrementCurrentQuestion:(id)sender {
-    
-    NSLog(@"the currentQuestionLabel is %@", self.currentLocationLabel.text);
-    [self printCurrentStatus];
-    if (![self.currentLocationLabel.text  isEqualToString: @"0"]) {
-    [myVariables sharedGameData].currentQuestionInt --;
-    NSLog(@"the value of globalVariables.currenQuestionInt was updated to %d", [myVariables sharedGameData].currentQuestionInt);
+    NSLog(@"Num Questions:%d,mapPos: %d,CurrentQuestion: %d ", [myVariables sharedGameData].numQuestions, _mapPosition, [myVariables sharedGameData].currentQuestionInt);
+    if ([self.currentLocationLabel.text integerValue] > 1) {
+        _mapPosition --;
     }
-    self.currentLocationLabel.text = [NSString stringWithFormat:@"%d",[myVariables sharedGameData].currentQuestionInt];
-    [[myVariables sharedGameData] save];
-    [self printCurrentStatus];
-    
+    [self updateCurrentPosition];
 }
 
-
-//helper functions
-- (void)printCurrentStatus{
-   // NSLog([NSString stringWithFormat:@"current question was saved to %d and the current label displays %@", [myVariables sharedGameData].currentQuestionInt,self.currentLocationLabel.text]);
-}
 @end

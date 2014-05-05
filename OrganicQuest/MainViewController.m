@@ -30,6 +30,7 @@
 
 - (void) viewDidAppear:(BOOL)animated{
     self.navigationController.navigationBarHidden = true;
+
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil

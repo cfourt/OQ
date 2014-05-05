@@ -48,7 +48,7 @@
     
 
     
-    NSLog(@"We're in the PreKnowledgeViewController Bro! The current question is: %d", [myVariables sharedGameData].currentQuestionInt);
+    //NSLog(@"We're in the PreKnowledgeViewController Bro! The current question is: %d", [myVariables sharedGameData].currentQuestionInt);
 
     UIImageViewQuestion *imageView = [[UIImageViewQuestion alloc] initWithImage:questionsArray[[myVariables sharedGameData].currentQuestionInt]];
     imageView.contentMode = UIViewContentModeScaleAspectFit;

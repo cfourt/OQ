@@ -14,6 +14,8 @@
 @property (getter = theCurrentQuestionIs) int currentQuestionInt;
 @property (getter = numQuestionsIs) int numQuestions;
 @property (getter = answerIs) NSArray* answersArray;
+@property NSArray* positionArrayY;
+@property NSArray* positionArrayX;
 
 - (int)decrementCurrentQuestion:(id)sender;
 - (int)incrementCurrentQuestion:(id)sender;
