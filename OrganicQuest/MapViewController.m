@@ -79,9 +79,13 @@
     //Change label based on if the current question will be selected
     if ((int)_mapPosition == currentQuestion) {
         [self.proceedLabel setImage:[UIImage imageNamed:@"Proceed-To-Next--3.png"] forState:UIControlStateNormal];
+        self.proceedLabel.userInteractionEnabled = true;
+
     }
     else{
-        [self.proceedLabel setImage:[UIImage imageNamed:@"Proceed-To-Previous-.png"] forState:UIControlStateNormal];
+        [self.proceedLabel setImage:[UIImage imageNamed:@"previous.png"] forState:UIControlStateNormal];
+        self.proceedLabel.userInteractionEnabled = false;
+
     }
     
 }

@@ -28,6 +28,7 @@
 		F887517C191FE87800BEB6F0 /* Boat.png in Resources */ = {isa = PBXBuildFile; fileRef = F887517B191FE87800BEB6F0 /* Boat.png */; };
 		F887517F191FF05000BEB6F0 /* Proceed-To-Previous-.png in Resources */ = {isa = PBXBuildFile; fileRef = F887517D191FF05000BEB6F0 /* Proceed-To-Previous-.png */; };
 		F8875180191FF05000BEB6F0 /* Proceed-To-Next--3.png in Resources */ = {isa = PBXBuildFile; fileRef = F887517E191FF05000BEB6F0 /* Proceed-To-Next--3.png */; };
+		F8875182191FF40700BEB6F0 /* previous.png in Resources */ = {isa = PBXBuildFile; fileRef = F8875181191FF40700BEB6F0 /* previous.png */; };
 		F8A49CC818E34A510011217E /* Question2.png in Resources */ = {isa = PBXBuildFile; fileRef = F8A49CC718E34A510011217E /* Question2.png */; };
 		F8BB257618C4448700066E8E /* PreKnowledgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8BB257518C4448700066E8E /* PreKnowledgeViewController.m */; };
 		F8BB258818C4F43D00066E8E /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8BB258718C4F43D00066E8E /* BaseViewController.m */; };
@@ -92,6 +93,7 @@
 		F887517B191FE87800BEB6F0 /* Boat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Boat.png; sourceTree = "<group>"; };
 		F887517D191FF05000BEB6F0 /* Proceed-To-Previous-.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Proceed-To-Previous-.png"; sourceTree = "<group>"; };
 		F887517E191FF05000BEB6F0 /* Proceed-To-Next--3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Proceed-To-Next--3.png"; sourceTree = "<group>"; };
+		F8875181191FF40700BEB6F0 /* previous.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = previous.png; sourceTree = "<group>"; };
 		F8A49CC718E34A510011217E /* Question2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Question2.png; path = OrganicQuest/Question2.png; sourceTree = "<group>"; };
 		F8BB257418C4448700066E8E /* PreKnowledgeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreKnowledgeViewController.h; sourceTree = "<group>"; };
 		F8BB257518C4448700066E8E /* PreKnowledgeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreKnowledgeViewController.m; sourceTree = "<group>"; };
@@ -185,6 +187,7 @@
 				F887517D191FF05000BEB6F0 /* Proceed-To-Previous-.png */,
 				F887517E191FF05000BEB6F0 /* Proceed-To-Next--3.png */,
 				F859A66919174C9D00945AC1 /* pixySSAnneRight.png */,
+				F8875181191FF40700BEB6F0 /* previous.png */,
 				F82B64CB1917454E00162EDB /* your_text.png */,
 				F82B64C21917224700162EDB /* oqMapWithDots.jpg */,
 				F82B64C31917224700162EDB /* Percival.png */,
@@ -381,6 +384,7 @@
 				F8875180191FF05000BEB6F0 /* Proceed-To-Next--3.png in Resources */,
 				F8D17BD218AEA9B400864525 /* Images.xcassets in Resources */,
 				F82B64D21917484900162EDB /* Proceed-To-Next--2.png in Resources */,
+				F8875182191FF40700BEB6F0 /* previous.png in Resources */,
 				F8686AA919135E5E00BA46DE /* Creators.png in Resources */,
 				F82B64CC1917454E00162EDB /* your_text.png in Resources */,
 				F887517A191FE71700BEB6F0 /* BluePercival.png in Resources */,
