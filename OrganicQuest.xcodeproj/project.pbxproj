@@ -24,6 +24,10 @@
 		F8686AA919135E5E00BA46DE /* Creators.png in Resources */ = {isa = PBXBuildFile; fileRef = F8686AA719135E5E00BA46DE /* Creators.png */; };
 		F8686AAB191361DD00BA46DE /* Contributors.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F8686AAA191361DD00BA46DE /* Contributors.jpg */; };
 		F8686AAD1913626F00BA46DE /* Cool.png in Resources */ = {isa = PBXBuildFile; fileRef = F8686AAC1913626F00BA46DE /* Cool.png */; };
+		F887517A191FE71700BEB6F0 /* BluePercival.png in Resources */ = {isa = PBXBuildFile; fileRef = F8875179191FE71700BEB6F0 /* BluePercival.png */; };
+		F887517C191FE87800BEB6F0 /* Boat.png in Resources */ = {isa = PBXBuildFile; fileRef = F887517B191FE87800BEB6F0 /* Boat.png */; };
+		F887517F191FF05000BEB6F0 /* Proceed-To-Previous-.png in Resources */ = {isa = PBXBuildFile; fileRef = F887517D191FF05000BEB6F0 /* Proceed-To-Previous-.png */; };
+		F8875180191FF05000BEB6F0 /* Proceed-To-Next--3.png in Resources */ = {isa = PBXBuildFile; fileRef = F887517E191FF05000BEB6F0 /* Proceed-To-Next--3.png */; };
 		F8A49CC818E34A510011217E /* Question2.png in Resources */ = {isa = PBXBuildFile; fileRef = F8A49CC718E34A510011217E /* Question2.png */; };
 		F8BB257618C4448700066E8E /* PreKnowledgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8BB257518C4448700066E8E /* PreKnowledgeViewController.m */; };
 		F8BB258818C4F43D00066E8E /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8BB258718C4F43D00066E8E /* BaseViewController.m */; };
@@ -84,6 +88,10 @@
 		F8686AA719135E5E00BA46DE /* Creators.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Creators.png; sourceTree = "<group>"; };
 		F8686AAA191361DD00BA46DE /* Contributors.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Contributors.jpg; sourceTree = "<group>"; };
 		F8686AAC1913626F00BA46DE /* Cool.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cool.png; sourceTree = "<group>"; };
+		F8875179191FE71700BEB6F0 /* BluePercival.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BluePercival.png; sourceTree = "<group>"; };
+		F887517B191FE87800BEB6F0 /* Boat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Boat.png; sourceTree = "<group>"; };
+		F887517D191FF05000BEB6F0 /* Proceed-To-Previous-.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Proceed-To-Previous-.png"; sourceTree = "<group>"; };
+		F887517E191FF05000BEB6F0 /* Proceed-To-Next--3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Proceed-To-Next--3.png"; sourceTree = "<group>"; };
 		F8A49CC718E34A510011217E /* Question2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Question2.png; path = OrganicQuest/Question2.png; sourceTree = "<group>"; };
 		F8BB257418C4448700066E8E /* PreKnowledgeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreKnowledgeViewController.h; sourceTree = "<group>"; };
 		F8BB257518C4448700066E8E /* PreKnowledgeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreKnowledgeViewController.m; sourceTree = "<group>"; };
@@ -171,6 +179,11 @@
 		F83F51F31915A6A300D22EF1 /* View Resources */ = {
 			isa = PBXGroup;
 			children = (
+				F887517B191FE87800BEB6F0 /* Boat.png */,
+				F8875179191FE71700BEB6F0 /* BluePercival.png */,
+				F82B64D319174B8B00162EDB /* pixySSAnne.png */,
+				F887517D191FF05000BEB6F0 /* Proceed-To-Previous-.png */,
+				F887517E191FF05000BEB6F0 /* Proceed-To-Next--3.png */,
 				F859A66919174C9D00945AC1 /* pixySSAnneRight.png */,
 				F82B64CB1917454E00162EDB /* your_text.png */,
 				F82B64C21917224700162EDB /* oqMapWithDots.jpg */,
@@ -235,7 +248,6 @@
 				FB60FB2D1895AFC800000D5A /* KnowledgePageViewController.h */,
 				FB60FB2E1895AFC800000D5A /* KnowledgePageViewController.m */,
 				FBA171DC18959BD100363AF7 /* Main.storyboard */,
-				F82B64D319174B8B00162EDB /* pixySSAnne.png */,
 				FB60FB221895A76700000D5A /* MainViewController.h */,
 				FB60FB231895A76700000D5A /* MainViewController.m */,
 				FB60FB1F1895A3F200000D5A /* MapViewController.h */,
@@ -366,15 +378,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				F859A66A19174C9D00945AC1 /* pixySSAnneRight.png in Resources */,
+				F8875180191FF05000BEB6F0 /* Proceed-To-Next--3.png in Resources */,
 				F8D17BD218AEA9B400864525 /* Images.xcassets in Resources */,
 				F82B64D21917484900162EDB /* Proceed-To-Next--2.png in Resources */,
 				F8686AA919135E5E00BA46DE /* Creators.png in Resources */,
 				F82B64CC1917454E00162EDB /* your_text.png in Resources */,
+				F887517A191FE71700BEB6F0 /* BluePercival.png in Resources */,
 				F8686AAB191361DD00BA46DE /* Contributors.jpg in Resources */,
 				F8BB259418C50DBB00066E8E /* FirstAnswer3.png in Resources */,
+				F887517C191FE87800BEB6F0 /* Boat.png in Resources */,
 				F82B64C51917224700162EDB /* oqMapWithDots.jpg in Resources */,
 				F8686AA819135E5E00BA46DE /* Creators-2.png in Resources */,
 				F816502218C1B577007F4061 /* Question1.png in Resources */,
+				F887517F191FF05000BEB6F0 /* Proceed-To-Previous-.png in Resources */,
 				F8686AA3191359D900BA46DE /* homeScreen.jpg in Resources */,
 				F8686AAD1913626F00BA46DE /* Cool.png in Resources */,
 				F8686AA519135D4300BA46DE /* start.png in Resources */,

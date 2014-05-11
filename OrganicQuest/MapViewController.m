@@ -76,12 +76,12 @@
     NSLog(@"map position: %d", (int)_mapPosition);
     NSLog(@"current question: %d", currentQuestion);
     
-    //Show/Don't Show proceed label
+    //Change label based on if the current question will be selected
     if ((int)_mapPosition == currentQuestion) {
-        self.proceedLabel.hidden = false;
+        [self.proceedLabel setImage:[UIImage imageNamed:@"Proceed-To-Next--3.png"] forState:UIControlStateNormal];
     }
     else{
-        self.proceedLabel.hidden = true;
+        [self.proceedLabel setImage:[UIImage imageNamed:@"Proceed-To-Previous-.png"] forState:UIControlStateNormal];
     }
     
 }

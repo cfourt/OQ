@@ -67,9 +67,9 @@ NSString* OQCurrentQuestionKey = @"currentQuestion";
     self = [self init];
     self.answersArray = @[@1,@3,@1,@2,@4,@2,@2,@3,@4,@1];
     self.numQuestions = (int)[self.answersArray count];
-    
-    self.positionArrayX = [NSArray arrayWithObjects: [NSNumber numberWithInt:36],[NSNumber numberWithInt:19],[NSNumber numberWithInt:32], [NSNumber numberWithInt:55], [NSNumber numberWithInt:103], [NSNumber numberWithInt:142], [NSNumber numberWithInt:190], [NSNumber numberWithInt:194], [NSNumber numberWithInt:164], [NSNumber numberWithInt:176], nil];
-    int yMod = 100;
+    int yMod = 75;
+    int xMod = 0;
+    self.positionArrayX = [NSArray arrayWithObjects: [NSNumber numberWithInt:(36-xMod)],[NSNumber numberWithInt:(19-xMod)],[NSNumber numberWithInt:(32-xMod)], [NSNumber numberWithInt:(55-xMod)], [NSNumber numberWithInt:(103-xMod)], [NSNumber numberWithInt:(142-xMod)], [NSNumber numberWithInt:(190-xMod)], [NSNumber numberWithInt:(194-xMod)], [NSNumber numberWithInt:(164-xMod)], [NSNumber numberWithInt:(176-xMod)], nil];
     self.positionArrayY = [NSArray arrayWithObjects:[NSNumber numberWithInt:(270-yMod)], [NSNumber numberWithInt:(318-yMod)], [NSNumber numberWithInt:(342-yMod)], [NSNumber numberWithInt:(388-yMod)], [NSNumber numberWithInt:(424-yMod)], [NSNumber numberWithInt:(388-yMod)], [NSNumber numberWithInt:(390-yMod)], [NSNumber numberWithInt:(340-yMod)], [NSNumber numberWithInt:(319-yMod)], [NSNumber numberWithInt:(270-yMod)], nil];
    
    
