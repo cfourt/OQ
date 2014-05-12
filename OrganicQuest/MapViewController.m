@@ -42,6 +42,7 @@
     [super viewDidLoad];
     _mapPosition = [myVariables sharedGameData].currentQuestionInt;
     [self updateCurrentPosition];
+    [myVariables sharedGameData].map = self;
 }
 
 - (void) viewDidAppear:(BOOL)animated{
@@ -80,12 +81,10 @@
     if ((int)_mapPosition == currentQuestion) {
         [self.proceedLabel setImage:[UIImage imageNamed:@"Proceed-To-Next--3.png"] forState:UIControlStateNormal];
         self.proceedLabel.userInteractionEnabled = true;
-
     }
     else{
         [self.proceedLabel setImage:[UIImage imageNamed:@"previous.png"] forState:UIControlStateNormal];
         self.proceedLabel.userInteractionEnabled = false;
-
     }
     
 }
@@ -112,4 +111,22 @@
     [self updateCurrentPosition];
 }
 
+- (void)goToPosition:(int)pos{
+    //should not be called unless the pos is equal to or below the current question
+    if (pos <= [myVariables sharedGameData].currentQuestionInt){
+        _mapPosition = pos;
+        [self updateCurrentPosition];
+    }
+    else{
+        NSLog(@"You done goofed and you called this at the wrong time!");
+    }
+}
 @end
+
+
+
+
+
+
+
+

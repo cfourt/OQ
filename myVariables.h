@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "MapViewController.h"
 
 @interface myVariables : NSObject <NSCoding>
 
@@ -16,6 +16,7 @@
 @property (getter = answerIs) NSArray* answersArray;
 @property NSArray* positionArrayY;
 @property NSArray* positionArrayX;
+@property MapViewController* map;
 
 - (int)decrementCurrentQuestion:(id)sender;
 - (int)incrementCurrentQuestion:(id)sender;

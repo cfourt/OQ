@@ -23,5 +23,5 @@
 
 - (IBAction)godminus:(id)sender;
 - (IBAction)godPlus:(id)sender;
-
+- (void)goToPosition:(int)pos;
 @end
