@@ -62,7 +62,7 @@
     NSNumber *correctAnswer = localArray[[myVariables sharedGameData].currentQuestionInt];
     NSNumber *userAnswer = [NSNumber numberWithInt:chosenAnswer];
     
-    if (userAnswer == correctAnswer && ![_gotTheAnswer  isEqual: @1]) { // need to add convert to integer here?
+    if (userAnswer == correctAnswer && ![_gotTheAnswer  isEqual: @1]) {
         _gotTheAnswer = @1;
         [myVariables sharedGameData].currentQuestionInt ++;
         
