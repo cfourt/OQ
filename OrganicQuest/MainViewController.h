@@ -10,6 +10,10 @@
 #import "myVariables.h"
 
 @interface MainViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIButton *startButton;
 - (IBAction)unWindToStartMenu:(UIStoryboardSegue *)seque;
 -(BOOL)prefersStatusBarHidden;
+
+- (IBAction)reset:(id)sender;
+
 @end

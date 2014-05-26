@@ -22,5 +22,5 @@
 - (int)incrementCurrentQuestion:(id)sender;
 + (instancetype)sharedGameData;
 - (void)save;
-
+- (int)updateCurrentQuestion:(int)newVal;
 @end

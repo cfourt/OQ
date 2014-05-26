@@ -50,7 +50,23 @@
     self.navigationController.navigationBarHidden = true;
     [self updateCurrentPosition];
     [[myVariables sharedGameData] save];
+    [self hoverProceedLabel];
+}
 
+- (void) hoverProceedLabel{
+    CGPoint startPoint = (CGPoint){self.proceedLabel.center.x, self.proceedLabel.center.y};
+    CGPoint endPoint = (CGPoint){startPoint.x, startPoint.y + 5};
+    
+    CGMutablePathRef thePath = CGPathCreateMutable();
+    CGPathMoveToPoint(thePath, NULL, startPoint.x, startPoint.y);
+    CGPathAddLineToPoint(thePath, NULL, endPoint.x, endPoint.y);
+    
+    CAKeyframeAnimation *animation = [CAKeyframeAnimation animationWithKeyPath:@"position"];
+    animation.duration = 1.5f;
+    animation.path = thePath;
+    animation.autoreverses = YES;
+    animation.repeatCount = INFINITY;
+    [self.proceedLabel.layer addAnimation:animation forKey:@"position"];
 }
 
 - (BOOL)prefersStatusBarHidden{
