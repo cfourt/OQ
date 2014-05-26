@@ -312,6 +312,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="backButton" destination="wAs-o9-OtE" id="br2-E9-lUO"/>
                         <outlet property="currentLocationLabel" destination="km7-3O-cyv" id="Ry5-Qa-wXl"/>
                         <outlet property="outOf" destination="cYt-dK-gJC" id="TWv-8K-9aH"/>
                         <outlet property="percival" destination="2Wg-ke-wbX" id="fkC-Sp-atw"/>

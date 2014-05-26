@@ -12,6 +12,7 @@
 
 @interface MapViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIButton *backButton;
 @property (weak, nonatomic) IBOutlet UILabel *currentLocationLabel;
 @property (weak, nonatomic) IBOutlet UIButton *proceedLabel;
 @property int mapPosition;

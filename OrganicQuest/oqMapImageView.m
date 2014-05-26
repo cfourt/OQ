@@ -31,12 +31,14 @@
     NSNumber *x = [NSNumber numberWithDouble:touchPoint.x];
     NSNumber *y = [NSNumber numberWithDouble:touchPoint.y];
     
+    float tolerance = 0.1f;
+    
     int xMod = 70;
     int yMod = 45;
     for (int i=0; i <= [myVariables sharedGameData].currentQuestionInt; i++) {
         int currentX = [[myVariables sharedGameData].positionArrayX[i] intValue]+xMod;
         int currentY = [[myVariables sharedGameData].positionArrayY[i] intValue]+yMod;
-        if(([x intValue]> (currentX - currentX*.05) && ([x intValue]<(currentX + currentX*.05))) && ([y intValue]> (currentY - currentY*.05)) && ([y intValue]< (currentY + currentY*.05))){
+        if(([x intValue]> (currentX - currentX*tolerance) && ([x intValue]<(currentX + currentX*tolerance))) && ([y intValue]> (currentY - currentY*tolerance)) && ([y intValue]< (currentY + currentY*tolerance))){
             //do shit
             NSLog(@"This touch corresponds to point: %d", i) ;
             MapViewController* map = [myVariables sharedGameData].map;

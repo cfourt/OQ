@@ -50,23 +50,31 @@
     self.navigationController.navigationBarHidden = true;
     [self updateCurrentPosition];
     [[myVariables sharedGameData] save];
-    [self hoverProceedLabel];
+    [self hoverLabels:_proceedLabel withTime:0.8f x:0 y:5];
+    [self hoverLabels:_backButton withTime:2.f x:3 y:0];
 }
 
-- (void) hoverProceedLabel{
-    CGPoint startPoint = (CGPoint){self.proceedLabel.center.x, self.proceedLabel.center.y};
-    CGPoint endPoint = (CGPoint){startPoint.x, startPoint.y + 5};
+- (void) hoverLabels:(UIView*) element withTime:(float) time x:(int)x y:(int)y{
+    
+    int xMod=x;
+    int yMod=y;
+
+    
+    
+    CGPoint startPoint = (CGPoint){element.center.x, element.center.y};
+    
+    CGPoint endPoint = (CGPoint){startPoint.x + xMod,startPoint.y + yMod};
     
     CGMutablePathRef thePath = CGPathCreateMutable();
     CGPathMoveToPoint(thePath, NULL, startPoint.x, startPoint.y);
     CGPathAddLineToPoint(thePath, NULL, endPoint.x, endPoint.y);
     
     CAKeyframeAnimation *animation = [CAKeyframeAnimation animationWithKeyPath:@"position"];
-    animation.duration = 1.5f;
+    animation.duration = time;
     animation.path = thePath;
     animation.autoreverses = YES;
     animation.repeatCount = INFINITY;
-    [self.proceedLabel.layer addAnimation:animation forKey:@"position"];
+    [element.layer addAnimation:animation forKey:@"position"];
 }
 
 - (BOOL)prefersStatusBarHidden{
@@ -88,7 +96,9 @@
     int xPos = [xPositionArray[_mapPosition] intValue];
     int yPos = [yPositionArray[_mapPosition] intValue];
     
-    _percival.frame = CGRectMake(xPos, yPos, 135, 72);
+    int percivalSizeX = 135;
+    int percivalSizeY = 72;
+    _percival.frame = CGRectMake(xPos, yPos, percivalSizeX, percivalSizeY);
     
     NSLog(@"map position: %d", (int)_mapPosition);
     NSLog(@"current question: %d", currentQuestion);
