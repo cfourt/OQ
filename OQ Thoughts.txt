@@ -1,0 +1,10 @@
+currentQuestion = integer reflecting current question
+QuestionsArray = array of images of various questions
+AnswersArray = array of integers corresponding to the correct answers for each question
+explainationArray = 
+
+
+Look up
+
+How to access properties of objects from different objects?
+How to detect position of touches on screen?
